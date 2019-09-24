@@ -1,0 +1,884 @@
+key,value,,,
+login/byemail,"{""url"": ""sso/login/byemail"",
+  ""method"": ""post"",
+ ""data"": {
+    ""email"": ""yongjian.zhao@wuliangroup.com"",
+    ""password"": ""bc9b5718afdffe85fb13555347969ff5"",
+    ""terminalId"":""***""
+        }
+}",,,
+login/byphone,"{""url"": ""sso/login/byphone"",
+  ""method"": ""post"",
+ ""data"": {
+                ""phone"": ""15850586522"",
+                ""phoneCountryCode"": 86,
+                ""password"": ""bc9b5718afdffe85fb13555347969ff5"",
+                ""terminalId"": ""***""     
+    }
+}
+",,,
+user/remove/user,"{""url"": ""sso/user/remove/user"",
+  ""method"": ""get"",
+ ""data"": {
+    ""phone"":""18168020465"",
+    ""phoneCountryCode"":""86""
+}
+}
+",ɾ���˺Žӿ�,,
+reg/byphone,"{""url"": ""sso/reg/byphone"",
+  ""method"": ""post"",
+ ""data"": {
+    ""phone"": ""18168020465"",
+    ""phoneCountryCode"": 86
+        } 
+}",����課��Ի���,,
+reg/phonecode,"{""url"": ""sso/reg/phonecode"",
+  ""method"": ""get"",
+ ""data"": {
+    ""phone"": ""13675124533"",
+    ""phoneCountryCode"": 86
+        } 
+}",,,
+reg/byemailcode,"{""url"": ""sso/reg/byemailcode"",
+  ""method"": ""post"",
+ ""data"": {
+    ""email"": ""1309817607@qq.com""
+        } 
+}",,,
+login/bythird,"{""url"": ""sso/login/bythird"",
+  ""method"": ""post"",
+ ""data"": {
+   ""thirdType"": 2,
+   ""terminalId"": ""f4cede55dfdcf29ab56c2adbf0ee4145"",
+   ""openId"": ""7736BA7611D9EEBCBAA89DC3785E6247"",
+   ""avatar"": ""http:\/\/q.qlogo.cn\/qqapp\/1106062262\/8005329582F41D11944FA953FB526A13\/100"",
+   ""nick"": ""��������"",
+   ""gender"": 0    
+        } 
+}",QQ������������¼,,
+,,,,
+login/logout,"{""url"": ""sso/login/logout"",
+  ""method"": ""post"",
+ ""data"": {
+    ""token"": ""token""
+        }
+}",,,
+,,,,
+terminal/reg_android,"{""url"": ""sso/terminal/reg"",
+  ""method"": ""post"",
+ ""data"": {
+    ""deviceId"": ""android866899022794786"",
+    ""appLang"": ""zh"",    
+    ""appVersion"": ""6.0.2"",
+    ""imei"": ""866899022794786"",
+    ""osType"": ""android"",    
+    ""osVersion"": ""6.0.1"",
+    ""market"":""""  
+        } 
+}",,,
+terminal/reg_ios,"{""url"": ""sso/terminal/reg"",
+  ""method"": ""post"",
+ ""data"": {
+    ""apnsToken"" : ""7ec6c07e891182d57e1711e37c052ba027ece75d327aea29dbb08f4b668d08cd"" ,
+    ""appLang"" : ""zh-cn"",
+    ""appType"" : 2 ,
+    ""appVersion"" : ""6.0.2"",
+    ""deviceId"" : ""c22042d915df66d284eef2ee6929d3ba0dfb2666"",
+    ""imei"" : ""c22042d915df66d284eef2ee6929d3ba0dfb2666"",
+    ""osType"" : ""IOS"" ,
+    ""osVersion"" : ""10.3.3""
+        } 
+}",,,
+token/mqtt,"{""url"": ""sso/token/mqtt"",
+  ""method"": ""get"",
+ ""data"": {
+    ""token"": ""token""
+        }
+}",,,
+login/third/bind,"{""url"": ""sso/login/third/bind"",
+  ""method"": ""post"",
+ ""data"": {
+    ""thirdType"": 1,
+    ""terminalId"": ""f4cede55dfdcf29ab56c2adbf0ee4145"",
+    ""openId"": ""ovQgr0upGkMQ1ztcFivYTpwBY3LA"",    
+    ""phone"": ""18168020465"",
+    ""phoneCountryCode"":""86"",
+    ""email"":""***"",
+    ""authCode"":""123456""    
+        } 
+}",��΢��dongwaren,��׿�ֻ�����ͨ��,ios������
+login/bythird_wechat,"{""url"": ""sso/login/bythird"",
+  ""method"": ""post"",
+ ""data"": {
+   ""thirdType"": 1,
+   ""terminalId"": ""f4cede55dfdcf29ab56c2adbf0ee4145"",
+   ""openId"": ""ovQgr0upGkMQ1ztcFivYTpwBY3LA"",   
+   ""gender"": 0    
+        } 
+}",΢�ŵ�¼,��׿�ֻ�����ͨ��,ios������
+login/third/update,"{""url"": ""sso/login/third/update"",
+  ""method"": ""post"",
+ ""data"": {
+    ""thirdType"": 3,
+    ""terminalId"": ""f4cede55dfdcf29ab56c2adbf0ee4145"",
+    ""openId"": ""1820499241"",    
+    ""phone"": ""18066111626"",
+    ""phoneCountryCode"":""86"",
+    ""email"":""***"",
+    ""authCode"":""123456""    
+        } 
+}",123456789!,,
+login/third/update_recover,"{""url"": ""sso/login/third/update"",
+  ""method"": ""post"",
+ ""data"": {
+    ""thirdType"": 3,
+    ""terminalId"": ""f4cede55dfdcf29ab56c2adbf0ee4145"",
+    ""openId"": ""6134524690"",    
+    ""phone"": ""18066111626"",
+    ""phoneCountryCode"":""86"",
+    ""email"":""***"",
+    ""authCode"":""123456""    
+        } 
+}",,,
+user/third/get,"{""url"": ""api/user/third/get"",
+  ""method"": ""get"",
+ ""data"": {
+    ""uId"": ""uId""
+        } 
+}",,,
+user/third/bind,"{""url"": ""api/user/third/bind"",
+  ""method"": ""post"",
+ ""data"": {
+   ""thirdType"": 1,  
+   ""openId"": ""7736BA7611D9EEBCBAA89DC3785E6247"",
+   ""uId"": ""uId""
+        } 
+}",,,
+user/third/bind/phonecode,"{""url"": ""api/user/third/bind/phonecode"",
+  ""method"": ""get"",
+ ""data"": {
+    ""phone"": ""13675124538"",
+    ""phoneCountryCode"" : ""86""
+        } 
+}",,,
+,,,,
+user/third/unbind,"{""url"": ""api/user/third/unbind"",
+  ""method"": ""post"",
+ ""data"": {
+   ""thirdType"": ""1"",
+   ""uId"": ""uId""
+        } 
+}",,,
+,,,,
+/feedback/saveFeedback,"{""url"": ""api/feedback/saveFeedback"",
+  ""method"": ""post"",
+ ""data"": {
+   ""phone"":""13675124538"",
+    ""appVersion"":""6.1.0"",
+    ""phoneModel"":""С��4"", 
+    ""feedbackContent"":""�Զ������ԣ������?",,,
+"    """"email"""":""""yangyi.gu@wuliangroup.com""""",,,,
+"    """"uId"""" : """"uId""""",,,,
+        } ,,,,
+"}""",,,,
+user/updatepass/phonecode,"{""url"": ""api/user/updatepass/phonecode"",
+  ""method"": ""get"",
+ ""data"": {
+    ""phone"": ""18168020465"",
+    ""phoneCountryCode"" : ""86""
+        } 
+}",,,
+user/avatar/update,"{""url"": ""api/user/avatar/update"",
+  ""method"": ""post"",
+ ""data"": ""D://code//1.jpg""
+}",,,
+,,,,
+user/info/update,"{""url"": ""api/user/info/update"",
+  ""method"": ""post"",
+ ""data"": {
+   ""nick"": ""滚滚长江东逝水浪花淘尽英雄"",
+    ""gender"": 0,
+    ""birthday"": ""1988-06-06"",
+    ""height"": 175,
+    ""username"": ""daiwen"",
+    ""avatar"": ""http:\/\/wx.qlogo.cn\/mmopen\/5RCxkL3Un85WDJ6KIez7arY9QyayoFEhkEBXzZia2EZwJlUgaWpJ44FhVhtkQUyFmcicooiaLrUwIzkuxicfhWTtlMvZMBn5tCsv\/0""
+        } 
+}",,,
+user/update/phone/phonecode,"{""url"": ""api/user/update/phone/phonecode"",
+  ""method"": ""get"",
+ ""data"": {
+    ""phone"": ""18168020464"",
+    ""phoneCountryCode"" : ""86""
+        } 
+}",,,
+user/email/update,"{""url"": ""api/user/email/update"",
+  ""method"": ""get"",
+ ""data"": {
+    ""email"": ""guchengcai@163.com""   
+        } 
+}",,,
+user/update/email/oldemailcode,"{""url"": ""api/user/update/email/oldemailcode"",
+  ""method"": ""get"",
+ ""data"": {
+    ""email"": ""yongjian.zhao@wuliangroup.com""
+        } 
+}",,,
+user/phone/update,"{""url"": ""api/user/phone/update"",
+  ""method"": ""post"",
+ ""data"": {
+   ""phone"": ""18120135777"",
+    ""phoneCountryCode"": ""86"",
+    ""authCode"": ""123456""
+        } 
+}",,,
+user/update/phone/oldphonecode,"{""url"": ""api/user/update/phone/oldphonecode"",
+  ""method"": ""get"",
+ ""data"": {
+   ""phone"": ""13675124538"",
+    ""phoneCountryCode"": ""86""
+        } 
+}",,,
+user/update/phone/verifyoldphone,"{""url"": ""api/user/update/phone/verifyoldphone"",
+  ""method"": ""post"",
+ ""data"": {
+   ""phone"": ""13675124538"",
+    ""phoneCountryCode"": ""86"",
+    ""authCode"": ""123456""
+        } 
+}",,,
+user/email/update/verify ,"{""url"": ""api/user/email/update/verify"",
+  ""method"": ""get"",
+ ""data"": {
+   ""email"": ""guchengcai@163.com"",
+    ""authCode"": ""123456""
+        } 
+}",δ����,,
+user/update/email/checkoldemailcode,"{""url"": ""api/user/update/email/checkoldemailcode"",
+  ""method"": ""get"",
+ ""data"": {
+   ""email"": ""15951644332@163.com"",
+    ""authCode"": ""123456""
+        } 
+}",δ����,,
+user/updatepass/byphone,"{""url"": ""api/user/updatepass/byphone"",
+  ""method"": ""post"",
+ ""data"": {
+   ""phone"": ""18168020465"",
+    ""password"": ""210b48b542659fb951a80a15c5997513"",
+    ""phoneCountryCode"": ""86"",
+    ""authCode"": ""123456""
+        } 
+}",123456@,,
+user/updatepass/byphone_recover,"{""url"": ""api/user/updatepass/byphone"",
+  ""method"": ""post"",
+ ""data"": {
+   ""phone"": ""18168020465"",
+    ""password"": ""eab7c169c851f1462a140448a299d8a6"",
+    ""phoneCountryCode"": ""86"",
+    ""authCode"": ""123456""
+        } 
+}",12345@,,
+user/updatepass/email,"{""url"": ""api/user/updatepass/email"",
+  ""method"": ""get"",
+ ""data"": {
+   ""email"": ""yangyi.gu@wuliangroup.com""
+        } 
+}",,,
+user/info,"{""url"": ""api/user/info"",
+  ""method"": ""get"",
+ ""data"": {   
+        } 
+}",,,
+user/updatepass,"{""url"": ""api/user/updatepass"",
+  ""method"": ""post"",
+ ""data"": {
+   ""password"": ""eab7c169c851f1462a140448a299d8a6"" ,
+    ""newpassword"": ""210b48b542659fb951a80a15c5997513""
+        } 
+}",,,
+user/updatepass_recover,"{""url"": ""api/user/updatepass/byphone"",
+  ""method"": ""post"",
+ ""data"": {
+   ""phone"": ""18168020465"",
+    ""password"": ""eab7c169c851f1462a140448a299d8a6"",
+    ""phoneCountryCode"": ""86"",
+    ""authCode"": ""123456""
+        } 
+}",,,
+app/getAppInfo,"{""url"": ""api/app/getAppInfo"",
+  ""method"": ""get"",
+ ""data"": {
+   ""os"": ""3"",
+    ""appType"": ""1""
+    
+        } 
+}",,,
+users/uId/devices,"{""url"": ""iot/v2/users/uId/devices"",
+  ""method"": ""get"",
+ ""data"": {
+   ""token"": ""token""
+        } 
+}",,,
+users/uId/sip,"{""url"": ""iot/v2/users/uId/sip"",
+  ""method"": ""get"",
+ ""data"": {
+   ""token"": ""token"",
+    ""deviceId"": ""cmic075550294d412ea5""
+        } 
+}",,,
+users/uId/devices/deviceId/bound-relation-code,"{""url"": ""iot/v2/users/uId/devices/cmic07db50294d414b20/bound-relation-code"",
+  ""method"": ""get"",
+ ""data"": {
+   ""token"": ""token"",
+    ""deviceType"": ""CMICA2""
+        } 
+}",,,
+users/uId/devices/staticInfo,"{""url"": ""iot/v2/users/uId/devices/staticInfo"",
+  ""method"": ""get"",
+ ""data"": {   
+    ""deviceId"": ""cmic075550294d412ea5""
+        } 
+}",,,
+records/uId/devices/deviceId,"{""url"": ""iot/v2/records/uId/devices/50294D412EA5"",
+  ""method"": ""get"",
+ ""data"": {
+   ""token"": ""token"",
+    ""dataType"": ""1"",    
+    ""childDeviceId"":""3875A803004B1200"",
+    ""cmd"":""500"",
+    ""alarmCode"": ""1""
+        } 
+}",,,
+users/uId/devices/deviceId,"{""url"": ""iot/v2/users/uId/devices/50294D412EA5"",
+  ""method"": ""get"",
+ ""data"": {
+   ""token"": ""token""
+        } 
+}",,,
+users/uId/device-relation,"{""url"": ""iot/v2/users/uId/device-relation"",
+  ""method"": ""post"",
+ ""data"": {
+   ""token"": ""token"",
+   ""deviceId"": ""50294DFFFFFB"",
+  ""targetDeviceid"":""62DEB505004B1200"",
+  ""relationType"": ""0""
+        } 
+}",,,
+,,,,
+users/uId/device-relation/deviceId,"{""url"": ""iot/v2/users/uId/device-relation/50294DFFFFFB"",
+  ""method"": ""get"",
+ ""data"": {
+   ""token"": ""token""
+        } 
+}",,", 
+  ""targetDeviceid"":""0997B605004B1200""",
+users/uId/device-relation/deviceId_delete,"{""url"": ""iot/v2/users/uId/device-relation/50294DFFFFFB"",
+  ""method"": ""delete"",
+ ""data"": {
+   ""token"": ""token"", 
+  ""targetDeviceid"":""62DEB505004B1200""
+        } 
+}",,,
+users/uId/users-push-info,"{""url"": ""iot/v2/users/uId/users-push-info"",
+  ""method"": ""post"",
+ ""data"": {
+   ""token"": ""token"",
+ ""deviceId"": ""50294d000123"", 
+ ""pushFlag"": ""1"",
+ ""pushType"": ""1""
+        } 
+}",,,
+users/uId/users-push-info_get,"{""url"": ""iot/v2/users/uId/users-push-info"",
+  ""method"": ""get"",
+ ""data"": {
+   ""token"": ""token"",
+ ""deviceId"": ""50294d000123"", 
+ ""gradeType"": ""2""
+        } 
+}",,,
+users/uId/users-push-info_delete,"{""url"": ""iot/v2/users/uId/users-push-info"",
+  ""method"": ""delete"",
+ ""data"": {
+   ""token"": ""token"",
+ ""deviceId"": ""50294d000123""
+        } 
+}",,,
+users/uId/third-devices,"{""url"": ""iot/v2/users/uId/third-devices"",
+  ""method"": ""post"",
+ ""data"": {
+   ""token"": ""token"",
+ ""deviceId"": ""cmic075550294d412ea5"",   
+ ""type"":""CMICA2"",
+ ""sdomain"":""shlc.wuliangroup.cn"", 
+ ""adminFlag"":""1""
+        } 
+}",,,
+users/uId/devices/alarm-Details,"{""url"": ""iot/v2/users/uId/devices/alarm-Details"",
+  ""method"": ""post"",
+""data"": {
+   ""token"": ""token"",
+ ""deviceId"": ""cmic056350294d406c24"",   
+ ""type"":""0"",
+  ""page"":""1"",
+  ""pages"":""10"", 
+  ""endTime"":""1516809599"",
+ ""startTime"":""1516463999""  
+        } 
+}",,,
+users/uId/devices/resource-token,"{""url"": ""iot/v2/users/uId/devices/resource-token"",
+  ""method"": ""post"",
+""data"": {
+   ""token"": ""token"",
+ ""deviceId"": ""cmic075550294d412ea5"",   
+ ""type"":""2"", 
+  ""sdomain"":""test.wuliangroup.cn""
+        } 
+}",,,
+users/uId/devices/resource-token1,"{""url"": ""iot/v2/users/uId/devices/resource-token"",
+  ""method"": ""post"",
+""data"": {
+   ""token"": ""token"",
+ ""key"": ""1"",   
+ ""type"":""1""   
+        } 
+}",,,
+users/uId/devices/info,"{""url"": ""iot/v2/users/uId/devices/info"",
+  ""method"": ""post"",
+""data"": {
+   ""token"": ""token"",
+ ""deviceId"": ""cmic075550294d412ea5"",   
+ ""name"":""�ҵ���㿴dog""   
+        } 
+}",,,
+partner/tokens,"{""url"": ""iot/v2/partner/tokens"",
+  ""method"": ""post"",
+""data"": {
+   ""partnerId"": ""7wncns1vhyxz"",
+    ""partnerPassword"": ""e10adc3949ba59abbe56e057f20f883e""   
+        } 
+}",,,
+users/uId/devices-grant/deviceId,"{""url"": ""iot/v2/users/uId/devices-grant/50294DFFFFFB"",
+  ""method"": ""post"",
+""data"": {
+   ""token"": ""token""  
+        } 
+}",,,
+users/uId/check/deviceId/v6/supportOrNot,"{""url"": ""iot/v2/users/uId/check/deviceId/v6/supportOrNot"",
+  ""method"": ""get"",
+""data"": {  
+ ""deviceId"": ""BBC94004004B1200""
+        } 
+}",,,
+users/uId/check/deviceId/v6/supportOrNot_non,"{""url"": ""iot/v2/users/uId/check/deviceId/v6/supportOrNot"",
+  ""method"": ""get"",
+""data"": {  
+ ""deviceId"": ""cmic056350294d406c24""
+        } 
+}",,,
+user/member/sign/info,"{""url"": ""api/user/member/sign/info"",
+  ""method"": ""get"",
+""data"": {    
+        } 
+}",,,
+user/member/point/info,"{""url"": ""api/user/member/point/info"",
+  ""method"": ""get"",
+""data"": {    
+        } 
+}",,,
+user/member/point/history,"{""url"": ""api/user/member/point/history"",
+  ""method"": ""get"",
+""data"": {
+""lastId"": ""0"",
+ ""limit"": ""12""   
+        } 
+}",,,
+user/member/sign,"{""url"": ""api/user/member/sign"",
+  ""method"": ""get"",
+""data"": {    
+        } 
+}",,,
+users/uId/devices-grant,"{""url"": ""iot/v2/users/uId/devices-grant"",
+  ""method"": ""post"",
+""data"": { 
+""token"": ""token"",
+""deviceId"" : ""50294DFFFFFB"",
+""granteeUid"" : ""2530f206affb412499db208a95e726bc""
+        } 
+}",,,
+users/uId/devices-grant/deviceId/granteeUid,"{""url"": ""iot/v2/users/uId/devices-grant/50294DFFFFFB/2530f206affb412499db208a95e726bc"",
+  ""method"": ""delete"",
+""data"": { 
+""token"": ""token""
+        } 
+}",,,
+users/uId/devices/deleteAlarmInfo,"{""url"": ""iot/v2/users/uId/devices/deleteAlarmInfo"",
+  ""method"": ""get"",
+""data"": { 
+""token"": ""token"", 
+""childDeviceId"" : ""3875A803004B1200"",
+""msgType"" : ""1""
+        } 
+}",ɾ�������Ŵ���,,
+users/uId/devices/deleteAlarmInfo_msg,"{""url"": ""iot/v2/users/uId/devices/deleteAlarmInfo"",
+  ""method"": ""get"",
+""data"": { 
+""token"": ""token"", 
+""childDeviceId"" : ""3875A803004B1200"",
+""msgType"" : ""2""
+        } 
+}",ɾ�������Ŵ���,,
+widget/getUserWidgetInfo,"{""url"": ""api/widget/getUserWidgetInfo"",
+  ""method"": ""get"",
+ ""data"": {
+   ""uId"": ""uId"",
+    ""topDeviceId"": ""50294d000123""
+        } 
+}",,,
+widget/getUserWidgetInfo_non,"{""url"": ""api/widget/getUserWidgetInfo"",
+  ""method"": ""get"",
+ ""data"": {
+   ""uId"": ""uId""
+        } 
+}",,,
+app/updateAppInfo,"{""url"": ""api/app/updateAppInfo"",
+  ""method"": ""post"",
+ ""data"": {
+   ""uId"": ""uId"",   
+   ""os"":""3"",
+""appType"" : ""1"",
+""appVersion"":""6.0.2"",
+  ""versionCode"":""6"",
+  ""versionName"":""6.0.2"",
+  ""url"":""https://wlapp.oss-cn-hangzhou.aliyuncs.com/SmartHomeV6/Android/SmartHome.apk""
+        } 
+}","android ��1,Apptype",,
+users/uId/users-devices-verify,"{""url"": ""iot/v2/users/uId/users-devices-verify"",
+  ""method"": ""post"",
+ ""data"": {
+    ""token"": ""token"",
+    ""deviceId"": ""cmic075550294d412ea5"",
+    ""deviceType"":""CMICA2""
+        } 
+}",��ѯ�˺źͰ�������ͷ�󶨹�ϵ,,
+theme/getAllTheme,"{""url"": ""api/theme/getAllTheme"",
+  ""method"": ""get"",
+ ""data"": {
+""appVersion"" : ""6.0.2""
+        } 
+}",,,
+,,,,
+records/uId/devices/deviceId/statistics_CO2,"{""url"": ""iot/v2/records/uId/devices/50294d000123/statistics"",
+  ""method"": ""get"",
+""data"": {    
+    ""childDeviceId"": ""78951A04004B1200"",
+    ""devType"": ""42"",
+    ""dataType"": ""1"",
+    ""token"": ""token"",
+    ""startTime"": ""1509498000"",
+    ""endTime"": ""1509586518""
+}
+}",��ѯ������̼����,,
+records/uId/devices/deviceId/statistics_humiture,"{""url"": ""iot/v2/records/uId/devices/50294d000123/statistics"",
+  ""method"": ""get"",
+""data"": {    
+    ""childDeviceId"": ""4A95B605004B1200"",
+    ""devType"": ""17"",
+    ""dataType"": ""1"",
+    ""token"": ""token"",
+    ""startTime"": ""1509498000"",
+    ""endTime"": ""1509586518""
+}
+}",��ѯ��ʪ������,,
+users/uId/devices/alarms,"{""url"": ""iot/v2/users/uId/devices/alarms"",
+  ""method"": ""post"",
+""data"": {
+    ""token"": ""token"",
+    ""deviceId"": ""50294D000123"",
+    ""childDeviceId"": ""BBC94004004B1200"",    
+    ""type"": ""1"",
+    ""msgType"": ""1""
+}
+}",��ȡ�û����������豸�澯δ�������������֣�,,
+users/uId/devices/alarms_logs,"{""url"": ""iot/v2/users/uId/devices/alarms"",
+  ""method"": ""post"",
+""data"": {
+    ""token"": ""token"",
+    ""deviceId"": ""50294D000123"",
+    ""childDeviceId"": ""BBC94004004B1200"",    
+    ""type"": ""1"",
+    ""msgType"": ""2""
+}
+}",��ȡ�û����������豸��־δ�������������֣�,,
+users/uId/rememberCurrentDevice/verfyPassword,"{""url"": ""iot/v2/users/uId/rememberCurrentDevice/verfyPassword"",
+  ""method"": ""put"",
+""data"": {
+    ""token"": ""token"",
+    ""deviceId"": ""50294DFFFFFB"",    ""devicePassword"":""bc9b5718afdffe85fb13555347969ff5""
+}
+}",��¼�û���ǰѡ�е����ز�У������,,
+users/uId/devices/deviceId/getChildDevices,"{""url"": ""iot/v2/users/uId/devices/50294DFFFFFB/getChildDevices"",
+  ""method"": ""get"",
+""data"": {
+    ""token"": ""token""
+}
+}",��ȡ�����豸�µ����豸��Ϣ,,
+user/bindthird/phonecode,"{""url"": ""sso/user/bindthird/phonecode"",
+  ""method"": ""get"",
+ ""data"": {
+    ""phone"": ""18168020465"",
+    ""phoneCountryCode"": 86
+        } 
+}",�����˺ŵ�¼ʱ���ֻ��ŷ�����֤��,,
+login/phone/email/sendCode,"{""url"": ""sso/login/phone/email/sendCode"",
+  ""method"": ""get"",
+ ""data"": {
+    ""phone"": ""18168020465"",
+    ""phoneCountryCode"": 86
+        } 
+}",��֤���¼������֤��?,,
+login/phone/email/login,"{""url"": ""sso/login/phone/email/login"",
+  ""method"": ""get"",
+ ""data"": {
+    ""phone"": ""13675124538"",
+    ""phoneCountryCode"": 86,
+    ""authCode"":""123456"",
+    ""email"":""""
+        }
+}",��֤����?,,
+luban/adv/info_CN,"{""url"": ""api/luban/adv/info"",
+  ""method"": ""get"",
+ ""data"": {
+    ""language"": ""zh_CN"",
+    ""partnerId"" : ""wulian_app""
+        } 
+}",��ѯ����?,,
+luban/adv/info_en,"{""url"": ""api/luban/adv/info"",
+  ""method"": ""get"",
+ ""data"": {
+    ""language"": ""en"",
+    ""partnerId"" : ""wulian_app""
+        } 
+}",��ѯ����?,,
+user/wechat/bind/phonecode,"{""url"": ""api/user/wechat/bind/phonecode"",
+  ""method"": ""get"",
+ ""data"": {
+    ""phone"": ""13675124538"",
+    ""phoneCountryCode"": 86
+        } 
+}",�������ںŰ�V6�˺ŷ�����֤��,,
+user/wechat/bind,"{""url"": ""api/user/wechat/bind"",
+  ""method"": ""post"",
+ ""data"": {
+    ""phone"": ""18168020465"",
+    ""phoneCountryCode"": 86 ,
+    ""unionId"": ""ovQgr0rNtJ03yV3bN9xlTjzQUM5"",
+    ""authCode"": ""123456""
+        } 
+}",,,
+user/wechat/update,"{""url"": ""api/user/wechat/update"",
+  ""method"": ""post"",
+ ""data"": {
+    ""phone"": ""15951644332"",
+    ""phoneCountryCode"": 86 ,
+    ""unionId"": ""ovQgr0sWtlyms9xkeqYX601egtcs""
+        } 
+}",,,
+user/wechat/update_recover,"{""url"": ""api/user/third/unbind"",
+  ""method"": ""post"",
+ ""data"": {
+   ""thirdType"": 1,    
+   ""uId"": ""uId""
+        } 
+}",,,
+,,,,
+login/logout_unbind,"{""url"": ""sso/login/logout"",
+  ""method"": ""post"",
+ ""data"": {
+    ""token"": ""token""
+        }
+}",,,
+,,,,
+area/province,"{""url"": ""api/area/province"",
+  ""method"": ""get"",
+ ""data"": {
+    ""token"": ""token"",
+    ""uId"": ""uId"",
+    ""countryCode"" : ""CN""
+        } 
+}",��ѯʡ��,,
+slideshow/getAllSlides,"{""url"": ""api/slideshow/getAllSlides"",
+  ""method"": ""get"",
+ ""data"": {
+        } 
+}",��ȡbanner�б�,,
+users/uId/getDeviceKeyValue,"{""url"": ""iot/v2/users/uId/getDeviceKeyValue"",
+  ""method"": ""get"",
+""data"": {
+    ""token"": ""token"",
+    ""deviceId"": ""BBC94004004B1222""
+}
+}",��ѯ�豸��ֵ����Ϣ,,
+users/uId/saveDeviceKeyValue,"{""url"": ""iot/v2/users/uId/saveDeviceKeyValue"",
+  ""method"": ""post"",
+""data"": {
+    ""token"": ""token"",
+    ""deviceId"": ""BBC94004004B1222"",
+    ""key"": ""wulian123"",
+    ""value"": ""123456789""
+}
+}",�����豸��ֵ����Ϣ,,
+users/uId/user/push,"{""url"": ""iot/v2/users/uId/user/push"",
+  ""method"": ""post"",
+""data"": {
+    ""token"": ""token"",
+    ""deviceId"": ""cmic056350294d406c24"",
+    ""uId"": ""uId"",
+    ""messageCode"": ""0104042""
+}
+}",֪ͨWiFi�豸�󶨵��û����������������豸,,
+users/uId/getBcCameraId,"{""url"": ""iot/v2/users/uId/getBcCameraId"",
+  ""method"": ""get"",
+""data"": {
+    ""token"": ""token"",
+    ""deviceId"": ""51D26C0F004B1200"",
+    ""uId"": ""uId"",
+    ""type"": ""Bc""
+}
+}",��ѯBc���µ������Id,,
+users/uId/oss/ram/account,"{""url"": ""iot/v2/users/uId/oss/ram/account"",
+  ""method"": ""get"",
+""data"": {
+    ""uId"": ""uId""
+}
+}",��ȡ����OSS���˺�����,,
+das/weather/current,"{""url"": ""das/weather/current"",
+  ""method"": ""get"",
+""data"": {
+    ""deviceId"": ""0997B605004B1200"",
+    ""cityCode"" : ""WWWM51WDH1FX""
+}
+}",��ѯ��ǰ����(�豸ʹ��)��̨,,
+area/city,"{""url"": ""api/area/city"",
+  ""method"": ""get"",
+ ""data"": {
+    ""token"": ""token"",
+    ""uId"": ""uId"",
+    ""countryCode"" : ""CN"",
+    ""provinceName"" : ""ɽ��""
+        } 
+}",��ѯ����,,
+,,,,
+music/playMusic,"{""url"": ""ent/music/playMusic"",
+  ""method"": ""post"",
+ ""data"": {
+            ""uId"": ""uId"",
+            ""deviceId"": ""XW01_821939819806158848"",
+            ""songId"": ""14""
+    }
+}
+",,,
+,,,,
+music/musicList,"{""url"": ""ent/music/get/music/list"",
+  ""method"": ""get"",
+ ""data"": {
+            ""deviceId"": ""XW01_821939819806158848"",
+            ""platformId"": 0,
+            ""page"": 1,
+            ""count"": 5
+    }
+}
+",,,
+,,,,
+music/nextOrLast,"{""url"": ""ent/music/nextOrLast"",
+  ""method"": ""post"",
+ ""data"": {
+            ""deviceId"": ""XW01_821939819806158848"",
+            ""uId"": 1,
+            ""nextOrLast"": 1
+    }
+}
+",,,
+,,,,
+music/get/playMode,"{""url"": ""ent/music/get/playMode"",
+  ""method"": ""get"",
+ ""data"": {
+            ""deviceId"": ""XW01_821939819806158848"",
+            ""platformId"": 0
+    }
+}
+",,,
+,,,,
+music/categories/list,"{""url"": ""ent/music/categories/list"",
+  ""method"": ""get"",
+ ""data"": {
+            ""deviceId"": ""XW01_821939819806158848"",
+            ""platformId"": 0
+    }
+}
+",,,
+,,,,
+music/set/playMode,"{""url"": ""ent/music/set/playMode"",
+  ""method"": ""post"",
+ ""data"": {
+            ""deviceId"": ""50294DFFFFFB"",
+            ""childDeviceId"": ""XW01_821939819806158848"",
+            ""playMode"": 0,
+            ""soundEffects"": 0,
+            ""volume"": ""5"",
+            ""uId"": ""uId""
+    }
+}
+",,,
+,,,,
+music/set/play/status,"{""url"": ""ent/music/set/play/status"",
+  ""method"": ""post"",
+ ""data"": {
+            ""deviceId"": ""XW01_821939819806158848"",
+            ""childDeviceId"": ""XW01_821939819806158848"",
+            ""playStatus"": 0
+    }
+}
+",,,
+,,,,
+reg/bythird,"{""url"": ""sso/reg/bythird"",
+  ""method"": ""post"",
+ ""data"": {
+            ""openId"": ""7736BA7611D9EEBCBAA89DC3785E6247"",
+            ""thirdType"": ""2"",
+            ""terminalId"": ""f4cede55dfdcf29ab56c2adbf0ee4145"",
+            ""phone"": ""18168020465"",
+            ""phoneCountryCode"": ""86"",
+            ""email"": """",
+            ""password"": ""eab7c169c851f1462a140448a299d8a6""
+    }
+}
+",,,
+,,,,
+user/iot/v3/updatePassAndLogin,"{""url"": ""sso/user/iot/v3/updatePassAndLogin"",
+  ""method"": ""post"",
+ ""data"": {
+            ""phone"": ""18168020465"",
+            ""phoneCountryCode"": ""86"",
+            ""email"": """",
+            ""password"": ""eab7c169c851f1462a140448a299d8a6"",
+            ""terminalId"": ""f4cede55dfdcf29ab56c2adbf0ee4145""
+    }
+}
+",,,
+reg/iot/v3/registByEmailAndPhone,"{""url"": ""sso/reg/iot/v3/registByEmailAndPhone"",
+  ""method"": ""post"",
+ ""data"": {
+            ""phone"": ""18168020465"",
+            ""phoneCountryCode"": ""86"",
+            ""email"": ""***"",
+            ""password"": ""eab7c169c851f1462a140448a299d8a6"",
+            ""terminalId"": ""f4cede55dfdcf29ab56c2adbf0ee4145""
+    }
+}
+",,,
+reg/byemailcode1,"{""url"": ""sso/reg/byemailcode"",
+  ""method"": ""get"",
+ ""data"": {
+    ""email"": ""1309817607@qq.com""
+        }
+}",,,

@@ -1,0 +1,103 @@
+物联云接口测试;
+sso
+login/byphone    -------------->SSO接口-手机号+密码登录  调试OK
+reg/byphone      -------------->SSO接口-手机号注册用户并且进行登录   需要新的账号注册，研发需要配合写删除账号的接口    暂未编码
+/reg/phonecode   -------------->SSO接口-手机注册时发送验证码  调试OK
+terminal/reg     -------------->SSO接口-注册设备   调试OK
+/reg/byemailcode -------------->SSO接口-申请邮箱注册 调试OK  可以发送邮件
+/reg/byemailvalidate ---------->SSO接口-申请邮箱注册,验证用户输入的验证码的之后，完成用户的注册，并登陆        暂未有办法获取邮件，填写验证码的方法  暂未编码
+login/bythird    -------------->SSO接口-第三方登录     调试OK   QQ 人来人往登录
+login/logout     -------------->SSO接口-退出登录       调试OK
+login/byemail    -------------->SSO接口-邮箱+密码登录  调试OK
+/user/updatepass/sendemailcode --->申请邮箱找回密码,后台会发送一封带有验证码的邮件给用户的邮箱     内部逻辑一个，邮箱发验证码，只需要测试一个即可
+/user/updatepass/byemailcode ----->申请邮箱找回密码,验证用户输入的验证码的之后，完成密码的更改     内部逻辑一个，邮箱发验证码，只需要测试一个即可
+login/third/bind  ------------->SSO接口-三方账号登录时绑定手机或邮箱     调试OK  用微信dongwaren 绑定     暂时每次跑完app解绑
+reg/bythird       ------------->SSO接口-三方账号登录时用手机或邮箱注册新账号   编码结束         需求：研发编写解除三方绑定和删除账号接口   暂未调试完成
+login/third/update------------->SSO接口-三方账号登录时替换已绑定的同类型账号   调试OK    顾洋溢1820499241   替换俞文韬新浪微博6134524690   绑定手机号 18066111626                                                  # 替换芳文新浪微博2236865385   绑定手机号 17714196172
+token/mqtt        ------------->SSO接口-token换取mqtt连接信息  调试OK 
+api
+/widget/saveUserWidgetInfo ------->api接口-保存widget信息      未编码
+/widget/getUserWidgetInfo  ------->查询widget信息			   未编码
+user/third/get     ------------->在用户资料页面查看用户绑定的三方账号  调试OK
+user/third/bind    ------------->在用户中心页面绑定三方账号    调试OK     该接口返回异常2000010
+user/third/bind/phonecode  ------->三方账号绑定账号发送手机验证码 调试OK
+user/third/unbind  ------------->在用户中心页面解绑三方账号  调试OK
+/feedback/saveFeedback  ------------->保存用户意见反馈接口 调试OK
+user/updatepass/phonecode  ------------>修改密码发送手机验证码  调试OK
+user/avatar/update         ------------>  修改当前登录用户的头像  python3  不支持poster模块 暂无编码
+user/info/update		------------> 修改当前登录用户的用户信息 调试OK
+user/update/phone/phonecode  ----->  修改密码发送手机验证码  调试OK
+user/email/update       ------------>变更邮箱发送邮箱验证码到新邮箱和绑定新邮箱  调试OK
+user/update/email/oldemailcode  ---->API接口-发送修改绑定邮箱的邮件到旧邮箱  调试OK
+user/phone/update       ------------>API接口-变更手机号     调试OK   调用了change_phonenumber文件，该文件数据写死
+user/update/phone/verifyoldphone  ---->API接口-变更手机号校验旧手机的验证码 调试OK
+user/email/update/verify  ----------->API接口-变更邮箱校验新邮箱的验证码,也是验证绑定邮箱的接口     需要新邮箱验证码默认   张斌还未开发  暂未编码
+user/update/email/checkoldemailcode  ---->API接口-变更邮箱校验旧邮箱的验证码    需要旧邮箱验证码默认   张斌还未开发  暂未编码
+user/updatepass/byphone   ----------->API接口-手机号+验证码修改用户密码  调试OK   changephonepassword 写死
+/app/uploads              ----------->API接口-打点日志上报  不需要自动化测试
+user/updatepass/email     ----------->API接口-申请修改用户密码邮件(通过邮箱修改密码)   调试OK
+user/info				  ----------->API接口-获取当前登录用户的用户信息  调试OK
+user/updatepass           ----------->API接口-通过原密码修改密码    调试OK   通过调用user/updatepass/byphone改回密码，用sso_post_headers方法
+app/getAppInfo            ----------->API接口-APP检查更新的接口  调试OK
+iot/v2/users/{uId}/devices    ------->   UAS接口-查询用户下绑定的设备信息  调试OK
+iot/v2/users/{uId}/sip    ----------->UAS接口-获取sip信息 调试OK   随便看
+iot/v2/users/{uId}/devices/{deviceId}/bound-relation-code  ------->UAS接口-获取绑定关系码 调试OK   随便看
+/iot/v2/users/{uId}/devices/staticInfo  ----------->UAS接口-获取设备静态信息 调试OK   随便看
+/iot/v2/records/{uId}/devices/{deviceId} ----------->可查询设备告警、用户操作数据  调试OK      网关
+iot/v2/users/{uId}/device-relation       -----------> 保存设备间关系     调试OK   随便看
+iot/v2/users/{uId}/device-relation/{deviceId}  ------->查询设备间关系    调试OK   随便看
+iot/v2/users/{uId}/device-relation/{deviceId}/delete  ------->删除设备间关系   调试OK  随便看
+iot/v2/users/{uId}/users-push-info      -------> 保存和更新共用此接口   调试OK
+iot/v2/users/uId/users-push-info_get        -------> 查询用户推送信息     调试OK
+users/uId/users-push-info_delete           ------->删除用户推送信息		调试OK
+users/uId/devices/alarm-Details           ------->摄像头告警相关        调试OK
+users/{uId}/devices/resource-token		  ------->获取阿里访问资源的秘钥   调试OK
+users/{uId}/devices/resource-token1		  ------->获取阿里访问资源的秘钥   调试OK
+iot/v2/partner/tokens  					 ------->第三方接口-帐号初始化    调试OK
+users/{uId}/devices-grant/{deviceId}     ------->设备取消分享接口  调试OK
+users/{uId}/check/deviceId/v6/supportOrNot  ------->校验设备是否是v6支持    调试OK
+users/{uId}/check/deviceId/v6/supportOrNot_non  ------->校验设备是否是v6支持    调试OK
+app/updateAppInfo	-------> 保存或者更新app信息接口(根据os和appType查询数据库，如果没有就新增，有就更新)    
+appType	整数	NO	IOS需要传 2-个人证书测试包/3-正式包/4-企业包
+user/member/sign/info        ------->获取当前用户的签到信息  调试OK
+user/member/point/info       ------->获取当前用户的积分信息(当前积分、累计积分、会员级别)     调试OK
+user/member/sign             ------->积分-用户签到     调试OK
+iot/v2/users/{uId}/devices-grant   ------->设备分享   调试OK
+iot/v2/users/{uId}/devices-grant/{deviceId}/{granteeUid}    ------->取消设备分享   调试OK
+iot/v2/users/{uId}/devices/deleteAlarmInfo     ------->删除用户消息中心报警消息   调试OK     
+/widget/getUserWidgetInfo					------->查询widget信息   调试OK
+/widget/getUserWidgetInfo_non					------->查询widget信息   调试OK
+app/updateAppInfo       ------->  保存或者更新app信息接口   调试OK
+users/uId/users-devices-verify    ------->  查询账号绑定摄像头的关系  调试OK
+theme/getAllTheme 	    ------->  API接口-app换肤接口(获取皮肤主题列表)  调试OK
+iot/v2/records/{uId}/devices/{deviceId}/statistics_CO2   -------->查询设备统计数据(例如温湿度，二氧化碳浓度，电量等)   调试OK
+iot/v2/records/{uId}/devices/{deviceId}/statistics_humiture   -------->查询设备统计数据(例如温湿度，二氧化碳浓度，电量等)   调试OK
+iot/v2/users/{uid}/devices/alarms          -------->  获取或清零用户网关下子设备告警未读数   调试OK
+iot/v2/users/{uid}/devices/alarms_logs          -------->  获取或清零用户网关下子设备日志未读数   调试OK
+users/uId/devices/deviceId/bound-relation-code   --------> 获取绑定关系码,现用于爱看摄像头类设备   调试OK
+/iot/v2/users/{uId}/rememberCurrentDevice/verfyPassword  -------->记录用户当前选中的网关并校验密码 调试OK
+users/uId/devices/deviceId/getChildDevices             --------> 三方账号登录时绑定手机号发送验证码  调试OK
+/user/bindthird/phonecode             -------->  三方账号登录时绑定手机号发送验证码    调试OK
+/luban/adv/info                       -------->  API接口-【广告页】- 查询
+user/wechat/bind/phonecode            -------->  API接口-【微信】- 物联公众号绑定V6账号发送验证码
+
+
+ 
+ 
+
+
+
+/user/iot/v3/updatePassAndLogin   --------------->通过手机号或者邮箱找回密码并登陆(其实就是用户输入完密码点击确定之后调这个接口)   没法写
+
+
+
+
+
+
+
+
+
+
+
+
+
