@@ -259,7 +259,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_interface/public/read_excel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
+            <state relative-caret-position="540">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
@@ -364,17 +364,6 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_test" type="462c0819:PsiDirectoryNode" />
-              <item name="PO" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -559,7 +548,7 @@
       <workItem from="1568594185380" duration="21744000" />
       <workItem from="1569317439167" duration="457000" />
       <workItem from="1569373014284" duration="1077000" />
-      <workItem from="1569376091100" duration="249000" />
+      <workItem from="1569376091100" duration="2385000" />
     </task>
     <servers />
   </component>
@@ -596,7 +585,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379823000" />
+    <option name="totallyTimeSpent" value="381959000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1046,7 +1035,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_interface/public/read_excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="540">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
