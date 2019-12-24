@@ -16,14 +16,17 @@ class Open_app(a01_login.Login):
     def open(self):
         desired_caps = {
             'platformName': 'Android',
-            'platformVersion': '6.0',
-            'deviceName': 'R8V5T15629001602',
+            'platformVersion': '8.0',
+            'deviceName': 'TPE9X18516W00552',
+            # 'deviceName': 'R8V5T15629001602',
             'noReset': True,  # 不用每次清除数据
             'resetKeyboard': True,
             "unicodeKeyboard": True,
             # 'app': 'D:\\test\\appium_test\APP\SmartHomev6.2.9.apk',
-            'appPackage': 'cc.wulian.smarthomev6',
-            'appActivity': 'cc.wulian.smarthomev6.main.welcome.SplashActivity',
+            'appPackage': 'com.wlinkapp',
+            'appActivity': 'com.wlinkapp.MainActivity',
+            # 'appPackage': 'cc.wulian.smarthomev6',
+            # 'appActivity': 'cc.wulian.smarthomev6.main.welcome.SplashActivity',
             'automationName': 'Uiautomator2'  # 定位toast元素
         }
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)

@@ -31,6 +31,6 @@ now = time.strftime("%Y-%m-%d_%H_%M_%S", time.localtime(time.time()))
 HtmlFile = report_path + now + "HTMLtemplate.html"
 fp = open(HtmlFile, "wb")
 # 下两行，run()方法是运行测试套件的测试用例，入参为suite测试套件。
-runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title="Android智能家居V6测试报告", description="测试结果")
+runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title="Android智能家居V7测试报告", description="测试结果")
 runner.run(suite)
 fp.close()
