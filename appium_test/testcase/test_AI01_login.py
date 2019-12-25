@@ -28,30 +28,10 @@ class Test001(unittest.TestCase, AI01_login.Login):  # TestCase类，所有测�
         self.driver.quit()
         self.assertEqual([], self.verificationErrors)
 
-    # 1、登陆成功
+    # 1、账号已有住宅情况，登录成功
     def test_login_success(self):
         self.assertTrue(self.login_success())
 
-    # 2、账号为空
-    def test_none_user(self):
-        self.assertFalse(self.none_user())
-
-    # 3、密码为空
-    def test_none_password(self):
-        self.assertFalse(self.none_password())
-
-    # 4、错误的账号（toast：账号或密码不正确）
-    def test_wrong_user(self):
-        self.assertTrue(self.wrong_user())
-
-    # 5、错误的密码（toast：用户密码错误）
-    def test_wrong_password(self):
-        self.assertTrue(self.wrong_password())
-
-    # 6、连续3次密码错误，取消弹窗
-    def test_wrong_password_3(self):
-        self.assertFalse(self.wrong_password_3())
-
-    # 7、连续3次密码错误，找回密码
-    def test_wrong_password_3_findp(self):
-        self.assertTrue(self.wrong_password_3_findp())
+    # 2、账号没有住宅情况，登陆成功
+    def test_login_success_no_house(self):
+        self.assertTrue(self.login_success_no_house())
