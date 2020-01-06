@@ -51,4 +51,44 @@ class Login(base_page.Action):
         self.login('wlink2019003@126.com', 'v7654321')
         return self.find_item('添加网关')  # 验证是否进入添加网关页面
 
-    # 2、注册页面
+    # 3、注册页面
+    def register(self):
+        if self.find_item('欢迎使用'):  # 未登录情况
+            pass
+        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
+            self.driver.back()  # 点击返回按钮
+            self.logout()  # 退出登录
+            self.driver.back()  # 点击返回按钮
+        else:  # 账号登陆，有住宅情况
+            self.logout()  # 退出登录
+            self.driver.back()  # 点击返回按钮
+        self.find_text('注册').click()  # 点击注册按钮
+        return self.find_item('注册即代表阅读并同意')
+
+    # 4、使用条款与免责协议页面
+    def agreement_page(self):
+        self.register()  # 注册页面
+        self.find_text('《使用条款与免责协议》').click()  # 点击使用条款与免责协议
+        time.sleep(3)
+        return self.find_item('《使用条款与免责协议》')
+
+    # 5、注册页面，获取验证码按钮置灰不可点击
+    def register_no_phone(self):
+        self.register()  # 注册页面
+        # self.find_text('手机号/邮箱').send_keys('18013986382')
+        self.find_text('获取验证码').click()  # 点击获取验证码
+        return self.find_item('获取验证码')  # 验证是否在注册页面
+
+    # 6、注册页面，输入手机号少一位，获取验证码按钮置灰不可点击
+    def register_phone_10(self):
+        self.register()  # 注册页面
+        self.find_text('手机号/邮箱').send_keys('1801398638')
+        self.find_text('获取验证码').click()  # 点击获取验证码
+        return self.find_item('获取验证码')  # 验证是否在注册页面
+
+    # 7、注册页面，输入手机号，获取验证码按钮可以点击
+    # 8、注册页面，输入已注册手机号，点击获取验证码按钮，弹窗手机号已被注册
+    # 9、注册页面手机号已被注册弹窗，点击取消按钮，弹窗消失
+    # 10、注册页面手机号已被注册弹窗，点击去登录按钮，进入登录页面
+    # 11、注册页面，输入未注册手机号，点击获取验证码按钮，进入输入验证码页面
+    # 12、注册-输入验证码页面，输入错误验证码，提示验证码错误

@@ -35,3 +35,19 @@ class Test001(unittest.TestCase, AI01_login.Login):  # TestCase类，所有测�
     # 2、账号没有住宅情况，登陆成功
     def test_login_success_no_house(self):
         self.assertTrue(self.login_success_no_house())
+
+    # 3、注册页面
+    def test_register(self):
+        self.assertTrue(self.register())
+
+    # 4、使用条款与免责协议页面
+    def test_agreement_page(self):
+        self.assertTrue(self.agreement_page())
+
+    # 5、注册页面，获取验证码按钮置灰不可点击
+    def test_register_no_phone(self):
+        self.assertTrue(self.register_no_phone())
+
+    # 6、注册页面，输入手机号少一位，获取验证码按钮置灰不可点击
+    def test_register_phone_10(self):
+        self.assertTrue(self.register_phone_10())
