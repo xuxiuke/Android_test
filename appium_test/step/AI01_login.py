@@ -75,9 +75,7 @@ class Login(base_page.Action):
     # 5、注册页面，获取验证码按钮置灰不可点击
     def register_no_phone(self):
         self.register()  # 注册页面
-        # self.find_text('手机号/邮箱').send_keys('18013986382')
-        self.find_text('获取验证码').click()  # 点击获取验证码
-        return self.find_item('获取验证码')  # 验证是否在注册页面
+        return self.get_colour_text('获取验证码')  # 验证按钮颜色是否正确
 
     # 6、注册页面，输入手机号少一位，获取验证码按钮置灰不可点击
     def register_phone_10(self):
@@ -87,7 +85,9 @@ class Login(base_page.Action):
 
     # 7、注册页面，输入手机号，获取验证码按钮可以点击
     def register_right_phone(self):
-        pass
+        self.register()  # 注册页面
+        self.find_text('手机号/邮箱').send_keys('18013986383')
+        return self.get_colour_text('获取验证码')  # 验证按钮颜色是否正确
 
     # 8、注册页面，输入已注册手机号，点击获取验证码按钮，弹窗手机号已被注册
     def register_phone_used(self):

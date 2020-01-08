@@ -406,8 +406,9 @@ class Action(object):
         time.sleep(2)
         self.find_id(excel.id_con('confirm_pwd_button')).click()  # 点击确定按钮
 
-    def get_colour_text(self, loc):  # 获取控件颜色，颜色正确返回Ture
-        fix_rgba = (38, 196, 128)
+    # 获取控件颜色，颜色正确返回Ture
+    def get_colour_text(self, loc):
+        fix_rgba = (38, 196, 128)  # 按钮颜色
         els = self.driver.find_elements_by_android_uiautomator('text(\"%s\")' % loc)
         self.driver.get_screenshot_as_file("D:\\test\\appium_test\date\\temp.png")
         pig = Image.open("D:\\test\\appium_test\date\\temp.png")
