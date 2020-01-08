@@ -50,4 +50,4 @@ class Test001(unittest.TestCase, AI01_login.Login):  # TestCase类，所有测�
 
     # 6、注册页面，输入手机号少一位，获取验证码按钮置灰不可点击
     def test_register_phone_10(self):
-        self.assertTrue(self.register_phone_10())
+        self.assertFalse(self.register_phone_10())

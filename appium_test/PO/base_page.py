@@ -12,6 +12,7 @@ import time
 from appium.webdriver.mobilecommand import MobileCommand
 from appium.webdriver.common.touch_action import TouchAction
 from PO import excel
+from PIL import Image
 
 
 class Action(object):
@@ -404,3 +405,22 @@ class Action(object):
         self.find_id(excel.id_con('et_new_pwd')).send_keys(new)  # 输入全数字新密码
         time.sleep(2)
         self.find_id(excel.id_con('confirm_pwd_button')).click()  # 点击确定按钮
+
+    def get_colour_text(self, loc):  # 获取控件颜色，颜色正确返回Ture
+        fix_rgba = (38, 196, 128)
+        els = self.driver.find_elements_by_android_uiautomator('text(\"%s\")' % loc)
+        self.driver.get_screenshot_as_file("D:\\test\\appium_test\date\\temp.png")
+        pig = Image.open("D:\\test\\appium_test\date\\temp.png")
+        for el in els:
+            x1 = el.location.get("x")
+            y1 = el.location.get("y")
+            h = el.size.get("height")
+            w = el.size.get("width")
+            x2 = x1 + w
+            y2 = y1 + h
+            el_img = pig.crop(box=(x1, y1, x2, y2))
+            el_rgba = el_img.getpixel((0, 0))  # 选取一个像素点
+            pig.close()  # 关闭打开的图片
+            print(el_rgba)  # (38, 196, 128) (216, 216, 216)
+            if el_rgba == fix_rgba:
+                return True

@@ -83,12 +83,28 @@ class Login(base_page.Action):
     def register_phone_10(self):
         self.register()  # 注册页面
         self.find_text('手机号/邮箱').send_keys('1801398638')
-        self.find_text('获取验证码').click()  # 点击获取验证码
-        return self.find_item('获取验证码')  # 验证是否在注册页面
+        return self.get_colour_text('获取验证码')  # 验证按钮颜色是否正确
 
     # 7、注册页面，输入手机号，获取验证码按钮可以点击
+    def register_right_phone(self):
+        pass
+
     # 8、注册页面，输入已注册手机号，点击获取验证码按钮，弹窗手机号已被注册
+    def register_phone_used(self):
+        pass
+
     # 9、注册页面手机号已被注册弹窗，点击取消按钮，弹窗消失
+    def register_popup_cancel(self):
+        pass
+
     # 10、注册页面手机号已被注册弹窗，点击去登录按钮，进入登录页面
+    def register_land(self):
+        pass
+
     # 11、注册页面，输入未注册手机号，点击获取验证码按钮，进入输入验证码页面
+    def register_code_page(self):
+        pass
+
     # 12、注册-输入验证码页面，输入错误验证码，提示验证码错误
+    def code_page_wrongcode(self):
+        pass
