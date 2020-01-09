@@ -76,3 +76,7 @@ class Test001(unittest.TestCase, AI01_login.Login):  # TestCase类，所有测�
     # 12、注册-输入验证码页面，输入错误验证码，提示验证码错误
     def test_code_page_wrongcode(self):
         self.assertTrue(self.code_page_wrongcode())
+
+    # 13、登录页面
+    def test_sign_in(self):
+        self.assertTrue(self.sign_in())
