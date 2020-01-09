@@ -1,10 +1,11 @@
-#coding=utf-8
+# coding=utf-8
 
 """
 作者: Duke
 文件名: test_AI01_login.py
 创建时间: 2019/12/24-14:41
 """
+
 from PO.open_app import Open_app
 from step import AI01_login
 import unittest
@@ -55,3 +56,23 @@ class Test001(unittest.TestCase, AI01_login.Login):  # TestCase类，所有测�
     # 7、注册页面，输入手机号，获取验证码按钮可以点击
     def test_register_right_phone(self):
         self.assertTrue(self.register_right_phone())
+
+    # 8、注册页面，输入已注册手机号，点击获取验证码按钮，弹窗手机号已被注册
+    def test_register_phone_used(self):
+        self.assertTrue(self.register_phone_used())
+
+    # 9、注册页面手机号已被注册弹窗，点击取消按钮，弹窗消失
+    def test_register_popup_cancel(self):
+        self.assertFalse(self.register_popup_cancel())
+
+    # 10、注册页面手机号已被注册弹窗，点击去登录按钮，进入登录页面
+    def test_register_land(self):
+        self.assertTrue(self.register_land())
+
+    # 11、注册页面，输入未注册手机号，点击获取验证码按钮，进入输入验证码页面
+    def test_register_code_page(self):
+        self.assertTrue(self.register_code_page())
+
+    # 12、注册-输入验证码页面，输入错误验证码，提示验证码错误
+    def test_code_page_wrongcode(self):
+        self.assertTrue(self.code_page_wrongcode())
