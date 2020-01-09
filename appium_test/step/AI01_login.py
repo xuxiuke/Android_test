@@ -91,7 +91,9 @@ class Login(base_page.Action):
 
     # 8、注册页面，输入已注册手机号，点击获取验证码按钮，弹窗手机号已被注册
     def register_phone_used(self):
-        pass
+        self.register()  # 注册页面
+        self.find_text('手机号/邮箱').send_keys('18013986383')
+        return self.get_colour_text('获取验证码')  # 验证按钮颜色是否正确
 
     # 9、注册页面手机号已被注册弹窗，点击取消按钮，弹窗消失
     def register_popup_cancel(self):

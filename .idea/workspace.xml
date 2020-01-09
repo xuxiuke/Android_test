@@ -212,13 +212,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_test/step/AI01_login.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="485">
-              <caret line="95" column="33" lean-forward="true" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+              <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
               <folding>
                 <element signature="e#76#112#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/appium_test/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="40" selection-start-line="40" selection-end-line="40" selection-end-column="26" />
+              <folding>
+                <element signature="e#61#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -227,8 +239,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_test/testcase/test_AI01_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="920">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#79#111#0" expanded="true" />
               </folding>
@@ -239,8 +251,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_test/PO/base_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="420" column="23" lean-forward="true" selection-start-line="420" selection-start-column="23" selection-end-line="420" selection-end-column="23" />
+            <state relative-caret-position="8280">
+              <caret line="420" column="23" selection-start-line="420" selection-start-column="23" selection-end-line="420" selection-end-column="23" />
               <folding>
                 <element signature="e#69#124#0" expanded="true" />
               </folding>
@@ -320,11 +332,11 @@
         <option value="$PROJECT_DIR$/test_interface/public/open_file.py" />
         <option value="$PROJECT_DIR$/test_interface/public/read_csv.py" />
         <option value="$PROJECT_DIR$/test_interface/public/read_excel.py" />
-        <option value="$PROJECT_DIR$/appium_test/main.py" />
         <option value="$PROJECT_DIR$/appium_test/PO/open_app.py" />
         <option value="$PROJECT_DIR$/appium_test/testcase/test_AI01_login.py" />
         <option value="$PROJECT_DIR$/appium_test/PO/base_page.py" />
         <option value="$PROJECT_DIR$/appium_test/step/AI01_login.py" />
+        <option value="$PROJECT_DIR$/appium_test/main.py" />
       </list>
     </option>
   </component>
@@ -353,18 +365,6 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="appium_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_test" type="462c0819:PsiDirectoryNode" />
-              <item name="step" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_test" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -542,6 +542,7 @@
       <workItem from="1577322310429" duration="17382000" />
       <workItem from="1578273917955" duration="7086000" />
       <workItem from="1578444024757" duration="10841000" />
+      <workItem from="1578531143539" duration="853000" />
     </task>
     <task id="LOCAL-00001" summary="V7">
       <created>1577174327893</created>
@@ -578,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578476101180</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="V7-2020.01.09_01">
+      <created>1578532132197</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578532132197</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -614,7 +622,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441572000" />
+    <option name="totallyTimeSpent" value="442425000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -627,8 +635,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989339" visible="true" weight="0.21137339" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989339" visible="true" weight="0.21405579" />
       <window_info id="Structure" order="1" sideWeight="0.5010661" side_tool="true" weight="0.23569277" />
       <window_info id="Favorites" order="2" sideWeight="0.5010661" side_tool="true" weight="0.23569277" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -639,7 +648,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32963374" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32963374" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50150603" side_tool="true" weight="0.2974473" />
       <window_info anchor="bottom" id="调试" order="11" weight="0.32963374" />
@@ -714,6 +723,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V7" />
@@ -721,7 +744,8 @@
     <MESSAGE value="V7-2020.01.06" />
     <MESSAGE value="V7-2020.01.08" />
     <MESSAGE value="V7-2020.01.08_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="V7-2020.01.08_1" />
+    <MESSAGE value="V7-2020.01.09_01" />
+    <option name="LAST_COMMIT_MESSAGE" value="V7-2020.01.09_01" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,16 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_test/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <element signature="e#61#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appium_test/step/case.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1096,32 +1110,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_test/PO/base_page.py">
+    <entry file="file://$PROJECT_DIR$/appium_test/step/AI01_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="420" column="23" lean-forward="true" selection-start-line="420" selection-start-column="23" selection-end-line="420" selection-end-column="23" />
+        <state relative-caret-position="485">
+          <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
           <folding>
-            <element signature="e#69#124#0" expanded="true" />
+            <element signature="e#76#112#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/appium_test/testcase/test_AI01_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="920">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#79#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_test/step/AI01_login.py">
+    <entry file="file://$PROJECT_DIR$/appium_test/PO/base_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="95" column="33" lean-forward="true" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+        <state relative-caret-position="8280">
+          <caret line="420" column="23" selection-start-line="420" selection-start-column="23" selection-end-line="420" selection-end-column="23" />
           <folding>
-            <element signature="e#76#112#0" expanded="true" />
+            <element signature="e#69#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_test/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="40" selection-start-line="40" selection-end-line="40" selection-end-column="26" />
+          <folding>
+            <element signature="e#61#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
