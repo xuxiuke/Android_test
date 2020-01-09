@@ -27,32 +27,8 @@ class Login(base_page.Action):
         self.find_text('退出登录').click()  # 点击退出登录
         time.sleep(1)
 
-    # 1、账号已有住宅情况，登录成功
-    def login_success(self):
-        if self.find_item('欢迎使用'):  # 未登录情况
-            self.find_text('登录').click()  # 点击登录按钮，进入登录页面
-        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
-            self.driver.back()  # 点击返回按钮
-            self.logout()  # 退出登录
-        else:  # 账号登陆，有住宅情况
-            self.logout()  # 退出登录
-        self.login('18013986382', 'wl123456789')
-        return self.find_item('我的')  # 验证是否有首页导航栏
-
-    # 2、账号没有住宅情况，登陆成功
-    def login_success_no_house(self):
-        if self.find_item('欢迎使用'):  # 未登录情况
-            self.find_text('登录').click()  # 点击登录按钮，进入登录页面
-        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
-            self.driver.back()  # 点击返回按钮
-            self.logout()  # 退出登录
-        else:  # 账号登陆，有住宅情况
-            self.logout()  # 退出登录
-        self.login('wlink2019003@126.com', 'v7654321')
-        return self.find_item('添加网关')  # 验证是否进入添加网关页面
-
-    # 3、注册页面
-    def register(self):
+    # 前置条件：欢迎使用页面
+    def welcome_to_use_page(self):
         if self.find_item('欢迎使用'):  # 未登录情况
             pass
         elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
@@ -62,6 +38,34 @@ class Login(base_page.Action):
         else:  # 账号登陆，有住宅情况
             self.logout()  # 退出登录
             self.driver.back()  # 点击返回按钮
+
+    # 前置条件：登陆页面
+    def logn_in_page(self):
+        if self.find_item('欢迎使用'):  # 未登录情况
+            self.find_text('登录').click()  # 点击登录按钮，进入登录页面
+        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
+            self.driver.back()  # 点击返回按钮
+            self.logout()  # 退出登录
+            time.sleep(1)
+        else:  # 账号登陆，有住宅情况
+            self.logout()  # 退出登录
+            time.sleep(1)
+
+    # 1、账号已有住宅情况，登录成功
+    def login_success(self):
+        self.logn_in_page()  # 登陆页面
+        self.login('18013986382', 'wl123456789')
+        return self.find_item('我的')  # 验证是否有首页导航栏
+
+    # 2、账号没有住宅情况，登陆成功
+    def login_success_no_house(self):
+        self.logn_in_page()  # 登陆页面
+        self.login('wlink2019003@126.com', 'v7654321')
+        return self.find_item('添加网关')  # 验证是否进入添加网关页面
+
+    # 3、注册页面
+    def register(self):
+        self.welcome_to_use_page()  # 欢迎使用页面
         self.find_text('注册').click()  # 点击注册按钮
         return self.find_item('注册即代表阅读并同意')
 
@@ -138,16 +142,7 @@ class Login(base_page.Action):
 
     # 13、登录页面
     def sign_in(self):
-        if self.find_item('欢迎使用'):  # 未登录情况
-            pass
-        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
-            self.driver.back()  # 点击返回按钮
-            self.logout()  # 退出登录
-            self.driver.back()  # 点击返回按钮
-        else:  # 账号登陆，有住宅情况
-            self.logout()  # 退出登录
-            self.driver.back()  # 点击返回按钮
-        self.find_text('登陆').click()  # 点击登陆按钮
+        self.logn_in_page()  # 登陆页面
         return self.find_text('手机号/邮箱') and self.find_text('密码')  # 验证是否进入登录页面
 
     # 14、登录页面，登录按钮置灰

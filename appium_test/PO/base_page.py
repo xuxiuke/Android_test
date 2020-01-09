@@ -156,7 +156,7 @@ class Action(object):
             el_img = pig.crop(box=(x1, y1, x2, y2))
             el_rgba = el_img.getpixel((0, 0))  # 选取一个像素点
             pig.close()  # 关闭打开的图片
-            print('控件色值为：' + el_rgba)  # (38, 196, 128) (216, 216, 216)
+            print(el_rgba)  # (38, 196, 128) (216, 216, 216)
             if el_rgba == fix_rgba:
                 return True
 
