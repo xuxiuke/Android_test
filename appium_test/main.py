@@ -34,3 +34,11 @@ fp = open(HtmlFile, "wb")
 runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title="Android智能家居V7测试报告", description="测试结果")
 runner.run(suite)
 fp.close()
+
+'''
+cd D:
+cd test
+git commit -m "2020.01.09"
+git remote add origin https://github.com/xuxiuke/test
+git push -u origin master
+'''
