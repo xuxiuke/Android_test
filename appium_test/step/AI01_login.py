@@ -13,53 +13,15 @@ import time
 
 class Login(base_page.Action):
 
-    # 前置条件：登录页面，账号登陆
-    def login(self, account, password):
-        self.find_text('手机号/邮箱').send_keys(account)
-        self.find_text('密码').send_keys(password)
-        self.find_xpath(excel.xpath_con('login')).click()  # 点击登陆按钮
-        time.sleep(2)
-
-    # 前置条件：首页，退出登陆
-    def logout(self):
-        self.find_text('我的').click()  # 点击我的
-        self.find_text('设置').click()  # 点击设置
-        self.find_text('退出登录').click()  # 点击退出登录
-        time.sleep(1)
-
-    # 前置条件：欢迎使用页面
-    def welcome_to_use_page(self):
-        if self.find_item('欢迎使用'):  # 未登录情况
-            pass
-        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
-            self.driver.back()  # 点击返回按钮
-            self.logout()  # 退出登录
-            self.driver.back()  # 点击返回按钮
-        else:  # 账号登陆，有住宅情况
-            self.logout()  # 退出登录
-            self.driver.back()  # 点击返回按钮
-
-    # 前置条件：登陆页面
-    def logn_in_page(self):
-        if self.find_item('欢迎使用'):  # 未登录情况
-            self.find_text('登录').click()  # 点击登录按钮，进入登录页面
-        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
-            self.driver.back()  # 点击返回按钮
-            self.logout()  # 退出登录
-            time.sleep(1)
-        else:  # 账号登陆，有住宅情况
-            self.logout()  # 退出登录
-            time.sleep(1)
-
     # 1、账号已有住宅情况，登录成功
     def login_success(self):
-        self.logn_in_page()  # 登陆页面
+        self.sign_in_page()  # 登陆页面
         self.login('18013986382', 'wl123456789')
         return self.find_item('我的')  # 验证是否有首页导航栏
 
     # 2、账号没有住宅情况，登陆成功
     def login_success_no_house(self):
-        self.logn_in_page()  # 登陆页面
+        self.sign_in_page()  # 登陆页面
         self.login('wlink2019003@126.com', 'v7654321')
         return self.find_item('添加网关')  # 验证是否进入添加网关页面
 
@@ -137,16 +99,25 @@ class Login(base_page.Action):
         self.find_xpath(excel.xpath_con('code_2')).send_keys('2')
         self.find_xpath(excel.xpath_con('code_3')).send_keys('3')
         self.find_xpath(excel.xpath_con('code_4')).send_keys('9')
-        time.sleep(1)
+        time.sleep(2)
         return self.find_item('验证码错误')
 
     # 13、登录页面
     def sign_in(self):
-        self.logn_in_page()  # 登陆页面
+        self.sign_in_page()  # 登录页面
         return self.find_text('手机号/邮箱') and self.find_text('密码')  # 验证是否进入登录页面
 
     # 14、登录页面，登录按钮置灰
+    def login_button_gray(self):
+        self.sign_in_page()  # 登录页面
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 15、登录页面，输入正确账号，不输入密码，登录按钮置灰
+    def login_no_password(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('18013986382')  # 输入账号
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 16、登录页面，不输入账号，输入正确格式密码，登录按钮置灰
     # 17、登录页面，输入手机号账号少一位（1801398638），输入正确格式密码，登录按钮置灰
     # 18、登录页面，输入手机号账号多一位（180139863821），输入正确格式密码，登录按钮置灰

@@ -160,6 +160,25 @@ class Action(object):
             if el_rgba == fix_rgba:
                 return True
 
+    def get_colour_xpath(self, loc):
+        fix_rgba = (38, 196, 128)  # 按钮颜色
+        els = self.driver.find_elements_by_xpath(loc)
+        self.driver.get_screenshot_as_file("D:\\test\\appium_test\date\\temp.png")
+        pig = Image.open("D:\\test\\appium_test\date\\temp.png")
+        for el in els:
+            x1 = el.location.get("x")
+            y1 = el.location.get("y")
+            h = el.size.get("height")
+            w = el.size.get("width")
+            x2 = x1 + w
+            y2 = y1 + h
+            el_img = pig.crop(box=(x1, y1, x2, y2))
+            el_rgba = el_img.getpixel((0, 0))  # 选取一个像素点
+            pig.close()  # 关闭打开的图片
+            print(el_rgba)  # (38, 196, 128) (216, 216, 216)
+            if el_rgba == fix_rgba:
+                return True
+
     # 判断页面上text是否存在
     def find_item(self, text):
         source = self.driver.page_source
@@ -235,189 +254,48 @@ class Action(object):
     # self.driver.implicitly_wait(30)  # 智能等待时间
 
     # ------------------------------------------------------------------------------------------------------------------
-    # 前置条件：未登陆则不处理，登陆就退出账号
-    def log_out(self):
-        text = self.get_text(excel.id_con('item_account_login_name'))  # 获取账户名称
-        print('账号昵称： ' + text)
-        if text != '登录/注册':
-            self.find_id(excel.id_con('item_setting')).click()
-            time.sleep(1)
-            self.find_id(excel.id_con('item_setting_logout')).click()
-            time.sleep(2)
+    # 前置条件：登录账号18013986382，已有住宅
+    def login_18013986382(self):
+        self.sign_in_page()  # 登陆页面
+        self.login('18013986382', 'wl123456789')
 
-    # 前置条件：账号登陆，我的页面
-    def account_login(self):
-        self.find_text('我的').click()
-        if self.find_text('登录/注册'):
-            self.login_accountnumber_password('18013986382', 'wl123456789')  # 登陆账号180
-            time.sleep(2)
-            self.find_text('我的').click()
+    # 前置条件：登录账号wlink2019003@126.com，没有住宅
+    def login_wlink2019003(self):
+        self.sign_in_page()  # 登陆页面
+        self.login('wlink2019003@126.com', 'v7654321')
 
-    # 前置条件：账号登陆，解绑所有网关，我的页面
-    def untie(self):
-        self.account_login()  # 登陆
-        self.find_id(excel.id_con('item_gateway_center')).click()  # 点击网关中心
-        time.sleep(2)
-        while True:
-            text = self.get_text(excel.id_con('item_gateway_center_name'))  # 获取网关中心网关名
-            print('网关名称： ' + text)
-            if text != '未登录网关':  # 确保账号没有绑定网关
-                self.find_id(excel.id_con('item_gateway_center_list')).click()  # 点击网关列表
-                self.wait_ac(excel.activity_con('gateway_list'))  # 确保进入网关列表页面
-                time.sleep(2)
-                self.unbound_gateway()  # 解除绑定网关
-                self.find_id(excel.id_con('img_left')).click()  # 点击返回按钮
-                time.sleep(1)
-            else:
-                break
-        self.find_id(excel.id_con('img_left')).click()
-        time.sleep(1)
-
-    # 前置条件：账号登陆，如果未绑定网关，绑定网关，网关中心页面
-    def old_gateway_center(self):
-        self.account_login()  # 登陆
-        self.find_id(excel.id_con('item_gateway_center')).click()  # 点击网关中心
-        time.sleep(2)
-        text = self.get_text(excel.id_con('item_gateway_center_name'))  # 获取网关中心网关名
-        print('网关名称： ' + text)
-        if text == '未登录网关':
-            self.find_id(excel.id_con('item_gateway_center_list')).click()  # 点击网关列表
-            self.wait_ac(excel.activity_con('gateway_list'))  # 确保进入网关列表页面
-            self.binding_gateway('50294D20B1FC', 'qazwsx1234')  # 绑定网关
-            self.driver.back()
-            time.sleep(1)
-
-    # 前置条件：账号登陆，如果未绑定网关，绑定网关，我的页面
-    def old_gateway_mine(self):
-        self.old_gateway_center()  # 账号登陆，网关中心
-        self.driver.back()
+    # 前置条件：登录页面，账号登陆
+    def login(self, account, password):
+        self.find_text('手机号/邮箱').send_keys(account)
+        self.find_text('密码').send_keys(password)
+        self.find_xpath(excel.xpath_con('login')).click()  # 点击登陆按钮
         time.sleep(2)
 
-    # 前置条件：场景页面，删除全部场景
-    def delete_scene_all(self):
-        while True:
-            if self.page_id(excel.id_con('scene_content')):
-                self.delete_scene()  # 删除场景
-            else:
-                break
-
-    # 前置条件：场景页面，删除场景
-    def delete_scene(self):
-        self.long_press_custom(self.find_xpath(excel.xpath_con('first_scene')))  # 长按第一个场景
-        time.sleep(1)
-        self.find_id(excel.id_con('popup_edit_scene_text_delete')).click()  # 点击删除
-        time.sleep(1)
-        self.find_id(excel.id_con('dialog_btn_positive')).click()  # 点击确定按钮
-        time.sleep(1)
-
-    # 前置条件：我的页面，进入分区管理页面
-    def zone_manage_page(self):
-        self.find_xpath(excel.xpath_con('device')).click()  # 点击设备
-        time.sleep(1)
-        self.find_id(excel.id_con('zone_manage')).click()  # 点击左上分区管理按钮
-        time.sleep(2)
-        self.wait_ac(excel.activity_con('area_activity'))  # 进入管理分区页面
-
-    # 前置条件：智能-场景页面，创建默认离家场景
-    def creat_scene_go_out(self):
-        self.find_id(excel.id_con('all_scene_image_add')).click()  # 点击创建场景
-        time.sleep(2)
-        self.find_xpath(excel.xpath_con('go_out')).click()  # 点击离家场景图标
-        time.sleep(1)
-        self.find_content_desc('完成').click()  # 点击完成按钮
-        time.sleep(3)
-        self.find_content_desc('保存').click()
-        self.wait_ac(excel.activity_con('all_scence_activity'))  # 全部场景页面
-
-    # 前置条件：智能-场景页面，创建场景
-    def creat_scene(self, name):
-        self.find_id(excel.id_con('all_scene_image_add')).click()  # 点击创建场景
-        time.sleep(2)
-        self.find_xpath(excel.xpath_con('customScene_input_name')).send_keys(name)  # 输入场景名称
-        self.find_xpath(excel.xpath_con('motion_mode')).click()  # 点击运动场景图标
-        time.sleep(1)
-        self.find_content_desc('完成').click()  # 点击完成按钮
-        time.sleep(3)
-        self.find_content_desc('保存').click()
-        self.wait_ac(excel.activity_con('all_scence_activity'))  # 全部场景页面
-
-    # 前置条件：分区管理页面，创建分区
-    def creat_zone(self, name):
-        self.find_id(excel.id_con('img_right')).click()  # 点击右键角+按钮，新增分区
-        time.sleep(1)
-        self.find_id(excel.id_con('et_user_info')).send_keys(name)  # 输入新分区名称，呵呵
-        self.find_id(excel.id_con('dialog_btn_positive')).click()  # 点击确定按钮
-        time.sleep(1)
-
-    # 前置条件：分区管理页面，删除分区
-    def delete_zone(self):
-        self.find_xpath(excel.xpath_con('item_area_image_more')).click()  # 点击第一个分区更多按钮
-        time.sleep(1)
-        self.find_id(excel.id_con('popup_edit_area_text_delete')).click()  # 点击删除按钮
-        time.sleep(2)
-        self.find_id(excel.id_con('dialog_btn_positive')).click()
-        time.sleep(1)
-
-    # 前置条件：分区管理页面，删除全部分区
-    def delete_zone_all(self):
-        while True:
-            if self.page_id(excel.id_con('item_area_image_more')):
-                self.delete_zone()  # 删除分区
-            else:
-                break
-
-    # 前置条件，至少有一个分区，设备列表页面???
-    def least_one_zone(self):
-        self.old_gateway_mine()  # 账号登陆，绑定网关，我的页面
-        self.find_xpath(excel.xpath_con('device')).click()  # 点击设备
-        time.sleep(1)
-        self.find_id(excel.id_con('base_img_right')).click()  # 点击右上+按钮
-        time.sleep(1)
-        self.find_xpath(excel.xpath_con('device_zone')).click()  # 点击管理分区
-        self.wait_ac(excel.activity_con('area_activity'))  # 进入管理分区页面
-        if self.page_id(excel.id_con('item_area_image_more')):
-            self.driver.back()  # 返回设备列表页面
-        else:
-            self.find_id(excel.id_con('img_right')).click()  # 点击右键角+按钮，新增分区
-            time.sleep(1)
-            self.find_id(excel.id_con('et_user_info')).send_keys(u'呵呵')  # 输入新分区名称，呵呵
-            self.find_id(excel.id_con('dialog_btn_positive')).click()  # 点击确定按钮
-            time.sleep(1)
-            self.driver.back()  # 返回设备列表页面
-
-    # 前置条件，登陆流程：点击登录/注册-》进入登陆页面-》输入账号-》输入密码-》点击登陆，参数账号和密码
-    def login_accountnumber_password(self, accountnumber, password):
-        self.find_id(excel.id_con('item_account_login_name')).click()  # 点击登录/注册
-        self.wait_ac(excel.activity_con('signin_activity'))  # 进入登陆页面
-        self.find_id(excel.id_con('username')).send_keys(accountnumber)
-        self.find_id(excel.id_con('password')).send_keys(password)
-        self.find_id(excel.id_con('login')).click()
-
-    # 前置条件，绑定网关流程，网关列表页面：点击+按钮-》输入网关账号、密码-》点击绑定按钮
-    def binding_gateway(self, number, password):
-        self.find_id(excel.id_con('img_right')).click()  # 点击网关列表右上角+按钮
-        time.sleep(1)
-        self.find_xpath(excel.xpath_con('et_gateway_username')).send_keys(number)  # 输入网关ID
-        self.find_id(excel.id_con('et_gateway_password')).send_keys(password)  # 输入网关密码
-        self.find_id(excel.id_con('btn_gateway_login')).click()  # 点击绑定网关按钮
+    # 前置条件：首页，退出登陆
+    def logout(self):
+        self.find_text('我的').click()  # 点击我的
+        self.find_text('设置').click()  # 点击设置
+        self.find_text('退出登录').click()  # 点击退出登录
         time.sleep(2)
 
-    # 前置条件，解绑网关流程，网关列表页面：左划网关-》点击解除绑定-》点击确定按钮
-    def unbound_gateway(self):
-        self.left_stroke(2000)  # 左划拉出解除绑定按钮
-        time.sleep(2)
-        self.find_xpath(excel.xpath_con('unbind')).click()  # 点击解除绑定按钮
-        time.sleep(2)
-        self.find_id(excel.id_con('dialog_btn_positive')).click()  # 点击确定按钮
-        time.sleep(2)
+    # 前置条件：欢迎使用页面
+    def welcome_to_use_page(self):
+        if self.find_item('欢迎使用'):  # 未登录情况
+            pass
+        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
+            self.driver.back()  # 点击返回按钮
+            self.logout()  # 退出登录
+            self.driver.back()  # 点击返回按钮
+        else:  # 账号登陆，有住宅情况
+            self.logout()  # 退出登录
+            self.driver.back()  # 点击返回按钮
 
-    # 前置条件，修改网关密码流程，网关中心页面：点击网关设置-》点击修改密码修改-》输入原始密码和新密码-》点击确定按钮
-    def modify_gateway_password(self, old, new):
-        self.find_id(excel.id_con('item_gateway_center_setting')).click()  # 点击网关设置
-        time.sleep(1)
-        self.find_id(excel.id_con('item_gateway_setting_info')).click()  # 点击网关密码修改
-        time.sleep(1)
-        self.find_id(excel.id_con('old_pwd_editText')).send_keys(old)  # 输入原始密码
-        self.find_id(excel.id_con('et_new_pwd')).send_keys(new)  # 输入全数字新密码
-        time.sleep(2)
-        self.find_id(excel.id_con('confirm_pwd_button')).click()  # 点击确定按钮
+    # 前置条件：登陆页面
+    def sign_in_page(self):
+        if self.find_item('欢迎使用'):  # 未登录情况
+            self.find_text('登录').click()  # 点击登录按钮，进入登录页面
+        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
+            self.driver.back()  # 点击返回按钮
+            self.logout()  # 退出登录
+        else:  # 账号登陆，有住宅情况
+            self.logout()  # 退出登录

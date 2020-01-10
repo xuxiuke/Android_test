@@ -80,3 +80,11 @@ class Test001(unittest.TestCase, AI01_login.Login):  # TestCase类，所有测�
     # 13、登录页面
     def test_sign_in(self):
         self.assertTrue(self.sign_in())
+
+    # 14、登录页面，登录按钮置灰
+    def test_login_button_gray(self):
+        self.assertFalse(self.login_button_gray())
+
+    # 15、登录页面，输入正确账号，不输入密码，登录按钮置灰
+    def test_login_no_password(self):
+        self.assertFalse(self.login_no_password())
