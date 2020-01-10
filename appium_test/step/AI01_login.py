@@ -119,15 +119,74 @@ class Login(base_page.Action):
         return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
 
     # 16、登录页面，不输入账号，输入正确格式密码，登录按钮置灰
+    def login_no_account(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('密码').send_keys('@q1234567')  # 输入密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 17、登录页面，输入手机号账号少一位（1801398638），输入正确格式密码，登录按钮置灰
+    def login_one_less_cell_phone_number(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('1801398638')  # 输入手机号少一位
+        self.find_text('密码').send_keys('@q1234567')  # 输入密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 18、登录页面，输入手机号账号多一位（180139863821），输入正确格式密码，登录按钮置灰
+    def login_one_more_cell_phone_number(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('180139863821')  # 输入手机号多一位
+        self.find_text('密码').send_keys('@q1234567')  # 输入密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 19、登录页面，输入邮箱账号没有@（qwerty126.com），输入正确格式密码，登录按钮置灰
-    # 20、登录页面，输入邮箱账号没有‘.’（1234567@126），输入正确格式密码，登录按钮置灰
+    def login_wrong_mailbox_account_1(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('qwerty126.com')  # 输入邮箱账号少@
+        self.find_text('密码').send_keys('@q1234567')  # 输入密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
+    # 20、登录页面，输入邮箱账号没有‘.’（1234567@126com），输入正确格式密码，登录按钮置灰
+    def login_wrong_mailbox_account_2(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('1234567@126com')  # 输入邮箱账号少.
+        self.find_text('密码').send_keys('@q1234567')  # 输入密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 21、登录页面，输入正确的账号，输入全数字密码（123456789），登录按钮置灰
+    def login_wrong_password_all_digital(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('18013986382')  # 输入账号
+        self.find_text('密码').send_keys('123456789')  # 输入全数字密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 22、登录页面，输入正确的账号，输入全字母密码（qwertyuiop），登录按钮置灰
+    def login_wrong_password_all_letter(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('18013986382')  # 输入账号
+        self.find_text('密码').send_keys('qwertyuiop')  # 输入全字母密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 23、登录页面，输入正确的账号，输入全符号密码（！@#￥%……&*（）），登录按钮置灰
+    def login_wrong_password_all_character(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('18013986382')  # 输入账号
+        self.find_text('密码').send_keys('！@#￥%……&*（）')  # 输入全字符密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 24、登录页面，输入正确的账号，输入少于8位密码（@q12345），登录按钮置灰
+    def login_wrong_password_less_8(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('18013986382')  # 输入账号
+        self.find_text('密码').send_keys('@q12345')  # 输入少于8位密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮颜色置灰
+
     # 25、登录页面，输入正确的账号，输入正确密码，登录按钮激活
+    def login_right_account_password(self):
+        self.sign_in_page()  # 登录页面
+        self.find_text('手机号/邮箱').send_keys('18013986382')  # 输入账号
+        self.find_text('密码').send_keys('wl123456789')  # 输入密码
+        return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮激活
+
     # 26、登录页面，输入未注册账号（18013986389），输入正确密码，点击登录，提示：用户不存在
     # 27、登录页面，输入正确的账号（18013986382），输入错误密码，点击登录，提示，密码错误
     # 28、登录页面，输入正确的账号（17751027576），输入错误密码，连续点击登录3次，弹出找回密码弹窗

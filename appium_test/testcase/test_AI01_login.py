@@ -88,3 +88,43 @@ class Test001(unittest.TestCase, AI01_login.Login):  # TestCase类，所有测�
     # 15、登录页面，输入正确账号，不输入密码，登录按钮置灰
     def test_login_no_password(self):
         self.assertFalse(self.login_no_password())
+
+    # 16、登录页面，不输入账号，输入正确格式密码，登录按钮置灰
+    def test_login_no_account(self):
+        self.assertFalse(self.login_no_account())
+
+    # 17、登录页面，输入手机号账号少一位（1801398638），输入正确格式密码，登录按钮置灰
+    def test_login_one_less_cell_phone_number(self):
+        self.assertFalse(self.login_one_less_cell_phone_number())
+
+    # 18、登录页面，输入手机号账号多一位（180139863821），输入正确格式密码，登录按钮置灰
+    def test_login_one_more_cell_phone_number(self):
+        self.assertFalse(self.login_one_more_cell_phone_number())
+
+    # 19、登录页面，输入邮箱账号没有@（qwerty126.com），输入正确格式密码，登录按钮置灰
+    def test_login_wrong_mailbox_account_1(self):
+        self.assertFalse(self.login_wrong_mailbox_account_1())
+
+    # 20、登录页面，输入邮箱账号没有‘.’（1234567@126com），输入正确格式密码，登录按钮置灰
+    def test_login_wrong_mailbox_account_2(self):
+        self.assertFalse(self.login_wrong_mailbox_account_2())
+
+    # 21、登录页面，输入正确的账号，输入全数字密码（123456789），登录按钮置灰
+    def test_login_wrong_password_all_digital(self):
+        self.assertFalse(self.login_wrong_password_all_digital())
+
+    # 22、登录页面，输入正确的账号，输入全字母密码（qwertyuiop），登录按钮置灰
+    def test_login_wrong_password_all_letter(self):
+        self.assertFalse(self.login_wrong_password_all_letter())
+
+    # 23、登录页面，输入正确的账号，输入全符号密码（！@#￥%……&*（）），登录按钮置灰
+    def test_login_wrong_password_all_character(self):
+        self.assertFalse(self.login_wrong_password_all_character())
+
+    # 24、登录页面，输入正确的账号，输入少于8位密码（@q12345），登录按钮置灰
+    def test_login_wrong_password_less_8(self):
+        self.assertFalse(self.login_wrong_password_less_8())
+
+    # 25、登录页面，输入正确的账号，输入正确密码，登录按钮激活
+    def test_login_right_account_password(self):
+        self.assertTrue(self.login_right_account_password())
