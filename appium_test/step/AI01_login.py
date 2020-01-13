@@ -187,23 +187,124 @@ class Login(base_page.Action):
         self.find_text('密码').send_keys('wl123456789')  # 输入密码
         return self.get_colour_xpath(excel.xpath_con('login'))  # 登录按钮激活
 
-    # 26、登录页面，输入未注册账号（18013986389），输入正确密码，点击登录，提示：用户不存在
+    # 26、登录页面，输入未注册账号（18013980000），输入正确密码，点击登录，提示：用户不存在
+    def user_does_not_exist(self):
+        self.sign_in_page()  # 登录页面
+        self.login('18013980000','wl123456789')  # 不存在账号登录
+        return self.find_item('用户不存在')  # 验证用户不存在是否显示
+
     # 27、登录页面，输入正确的账号（18013986382），输入错误密码，点击登录，提示，密码错误
+    def wrong_password(self):
+        self.sign_in_page()  # 登录页面
+        self.login('18013986382', 'as123456789')  # 错误密码登录
+        return self.find_item('密码错误')  # 验证提示密码错误是否显示
+
     # 28、登录页面，输入正确的账号（17751027576），输入错误密码，连续点击登录3次，弹出找回密码弹窗
-    # 29、登录页面，找回密码弹窗（wlink2019001@126.com），点击取消按钮，弹窗消失
+    def wrong_password_3(self):
+        self.sign_in_page()  # 登录页面
+        self.login('17751027576', 'v987456321')  # 错误密码登录
+        n = 0
+        while self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
+            self.find_xpath(excel.xpath_con('login')).click()  # 登录
+            time.sleep(3)
+            n = n + 1
+        return self.find_item('您的账号或密码不正确，是否找回密码？')  # 验证找回密码弹窗
+
+    # 29、登录页面，找回密码弹窗（16574488587），点击取消按钮，弹窗消失
+    def find_password_popup(self):
+        self.sign_in_page()  # 登录页面
+        self.login('wlink2019001@126.com', 'v987456321')  # 错误密码登录
+        n = 0
+        while self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
+            self.find_xpath(excel.xpath_con('login')).click()  # 登录
+            time.sleep(3)
+            n = n + 1
+        self.find_text('取消').click()  # 点击取消按钮
+        return self.find_item('您的账号或密码不正确，是否找回密码？')  # 验证找回密码弹窗
+
     # 30、登录页面，找回密码弹窗（wlink2019003@126.com），点击找回密码按钮，进入找回密码页面
-    # 31、登录页面，找回密码弹窗（wlink2019002@126.com），点击取消后再点击2次登录，弹出安全提示弹窗
+    def find_password_page_2(self):
+        self.sign_in_page()  # 登录页面
+        self.login('wlink2019003@126.com', 'v987456321')  # 错误密码登录
+        n = 0
+        while self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
+            self.find_xpath(excel.xpath_con('login')).click()  # 登录
+            time.sleep(3)
+            n = n + 1
+        self.find_xpath(excel.xpath_con('find_password')).click()  # 点击找回密码按钮
+        time.sleep(1)
+        return self.find_item('获取验证码')  # 验证是否进入找回密码页面
+
+    # 31、登录页面，找回密码弹窗（16574488587），点击取消后再点击2次登录，弹出安全提示弹窗
+    def safety_tips_popup(self):
+        self.sign_in_page()  # 登录页面
+        self.login('16574488587', 'v987456321')  # 错误密码登录
+        n = 0
+        while self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
+            self.find_xpath(excel.xpath_con('login')).click()  # 登录
+            time.sleep(3)
+            n = n + 1
+        self.find_text('取消').click()  # 点击取消按钮
+        time.sleep(1)
+        m = 0
+        while self.find_item('安全提示') and m < 2:
+            self.find_xpath(excel.xpath_con('login')).click()  # 登录
+            time.sleep(3)
+            m = m + 1
+        return self.find_item('安全提示')  # 验证安全提示弹窗
+
     # 32、登录页面，点击验证码登录，进入验证码登录页面
+    def code_login_page(self):
+        pass
+
     # 33、验证码登录页面，获取验证码按钮置灰
+    def code_login_page_none(self):
+        pass
+
     # 34、验证码登录页面，输入正确手机号账号，获取验证码激活
+    def code_login_page_right_phone(self):
+        pass
+
     # 35、验证码登录页面，输入正确邮箱账号，获取验证码激活
+    def code_login_page_right_mail(self):
+        pass
+
     # 36、验证码登录页面，输入未注册账号，获取验证码激活，提示：用户不存在
+    def code_login_page_unregistered(self):
+        pass
+
     # 37、验证码登录页面，输入正确账号，点击获取验证码按钮，进入输入验证码页面
+    def code_login_enter_code_page(self):
+        pass
+
     # 38、验证码登录-输入验证码页面，输入错误验证码，提示：验证码错误
+    def code_login_enter_code_page_wrong_code(self):
+        pass
+
     # 39、登录页面，点击找回密码，进入找回密码页面
+    def find_password_page(self):
+        pass
+
     # 40、找回密码页面，获取验证码按钮置灰
+    def find_password_page_none(self):
+        pass
+
     # 41、找回密码页面，输入正确手机号账号，获取验证码激活
+    def find_password_page_right_phone(self):
+        pass
+
     # 42、找回密码页面，输入正确邮箱账号，获取验证码激活
+    def find_password_page_right_mail(self):
+        pass
+
     # 43、找回密码页面，输入未注册账号，获取验证码激活，提示：用户不存在
+    def find_password_page_unregistered(self):
+        pass
+
     # 44、找回密码页面，输入正确账号，点击获取验证码，进入输入验证码页面
+    def find_password_enter_code_page(self):
+        pass
+
     # 45、找回密码-输入验证码页面，输入错误验证码，提示：验证码错误
+    def find_password_enter_code_page_wrong_code(self):
+        pass

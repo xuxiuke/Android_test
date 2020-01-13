@@ -128,3 +128,27 @@ class Test001(unittest.TestCase, AI01_login.Login):  # TestCase类，所有测�
     # 25、登录页面，输入正确的账号，输入正确密码，登录按钮激活
     def test_login_right_account_password(self):
         self.assertTrue(self.login_right_account_password())
+
+    # 26、登录页面，输入未注册账号（18013980000），输入正确密码，点击登录，提示：用户不存在
+    def test_user_does_not_exist(self):
+        self.assertTrue(self.user_does_not_exist())
+
+    # 27、登录页面，输入正确的账号（18013986382），输入错误密码，点击登录，提示，密码错误
+    def test_wrong_password(self):
+        self.assertTrue(self.wrong_password())
+
+    # 28、登录页面，输入正确的账号（17751027576），输入错误密码，连续点击登录3次，弹出找回密码弹窗
+    def test_wrong_password_3(self):
+        self.assertTrue(self.wrong_password_3())
+
+    # 29、登录页面，找回密码弹窗（wlink2019001@126.com），点击取消按钮，弹窗消失
+    def test_find_password_popup(self):
+        self.assertFalse(self.find_password_popup())
+
+    # 30、登录页面，找回密码弹窗（wlink2019003@126.com），点击找回密码按钮，进入找回密码页面
+    def test_find_password_page_2(self):
+        self.assertTrue(self.find_password_page_2())
+
+    # 31、登录页面，找回密码弹窗（wlink2019002@126.com），点击取消后再点击2次登录，弹出安全提示弹窗
+    def test_safety_tips_popup(self):
+        self.assertTrue(self.safety_tips_popup())
