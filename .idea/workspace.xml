@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="16d3bef8-c8e0-476d-aead-1cad0ecace27" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appium_test/date/ControlLibrary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/appium_test/date/ControlLibrary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_test/PO/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_test/PO/base_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appium_test/date/temp.png" beforeDir="false" afterPath="$PROJECT_DIR$/appium_test/date/temp.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appium_test/step/AI01_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_test/step/AI01_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appium_test/testcase/test_AI01_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_test/testcase/test_AI01_login.py" afterDir="false" />
@@ -40,6 +40,7 @@
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_zoning_management_Test006_test_edit_delete_cancel.coverage" NAME="Unittests for test_zoning_management.Test006.test_edit_delete_cancel Coverage Results" MODIFIED="1563415835675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_register_Test003_test_account_is_registered.coverage" NAME="Unittests for test_register.Test003.test_account_is_registered Coverage Results" MODIFIED="1563159828129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_open_alarm_speech.coverage" NAME="Unittests for test_setting.Test005.test_open_alarm_speech Coverage Results" MODIFIED="1563332516621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_find_password_page_2.coverage" NAME="Unittests for test_AI01_login.Test001.test_find_password_page_2 Coverage Results" MODIFIED="1578897268600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_register_Test003_test_forget_the_password.coverage" NAME="Unittests for test_register.Test003.test_forget_the_password Coverage Results" MODIFIED="1563268119234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_register_Test003.coverage" NAME="Unittests for test_register.Test003 Coverage Results" MODIFIED="1563266859855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_change_no_old_password.coverage" NAME="Unittests for test_account_login.Test004.test_change_no_old_password Coverage Results" MODIFIED="1563258219121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
@@ -62,6 +63,7 @@
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_closing_alarm_speech.coverage" NAME="Unittests for test_setting.Test005.test_closing_alarm_speech Coverage Results" MODIFIED="1563343487177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_authentication_button.coverage" NAME="Unittests for test_setting.Test005.test_authentication_button Coverage Results" MODIFIED="1563349368416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_zoning_management_Test006_test_zone_reduce.coverage" NAME="Unittests for test_zoning_management.Test006.test_zone_reduce Coverage Results" MODIFIED="1563418028989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_code_login_page.coverage" NAME="Unittests for test_AI01_login.Test001.test_code_login_page Coverage Results" MODIFIED="1578898242615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_password_no_code.coverage" NAME="Unittests for test_setting.Test005.test_password_no_code Coverage Results" MODIFIED="1563328372659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_tourist_Test002_test_click_the_customer_service.coverage" NAME="Unittests for test_tourist.Test002.test_click_the_customer_service Coverage Results" MODIFIED="1563153506489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_modify_the_name_determine.coverage" NAME="Unittests for test_account_login.Test004.test_modify_the_name_determine Coverage Results" MODIFIED="1563266716630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
@@ -85,7 +87,7 @@
     <SUITE FILE_PATH="coverage/test$counting.coverage" NAME="counting Coverage Results" MODIFIED="1561443031315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DEMO" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_scene_Test007.coverage" NAME="Unittests for test_scene.Test007 Coverage Results" MODIFIED="1564038178104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_click_the_scene.coverage" NAME="Unittests for test_account_login.Test004.test_click_the_scene Coverage Results" MODIFIED="1563241389794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
-    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_wrong_password_3.coverage" NAME="Unittests for test_AI01_login.Test001.test_wrong_password_3 Coverage Results" MODIFIED="1578879099172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_wrong_password_3.coverage" NAME="Unittests for test_AI01_login.Test001.test_wrong_password_3 Coverage Results" MODIFIED="1578895803236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_open_push.coverage" NAME="Unittests for test_setting.Test005.test_open_push Coverage Results" MODIFIED="1563332068865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$test_user_uId_req_control_closecurtains.coverage" NAME="test_user_uId_req_control_closecurtains Coverage Results" MODIFIED="1567136191278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SmartHomeV6Code_TestTeam-InterfaceTest/mqtt_test/unite" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_head_portrait_cancel.coverage" NAME="Unittests for test_account_login.Test004.test_head_portrait_cancel Coverage Results" MODIFIED="1563266627749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
@@ -136,7 +138,7 @@
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_home_page.coverage" NAME="Unittests for test_account_login.Test004.test_home_page Coverage Results" MODIFIED="1563175084718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_tourist_Test002_test_home_page.coverage" NAME="Unittests for test_tourist.Test002.test_home_page Coverage Results" MODIFIED="1562920404279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_wulian_member.coverage" NAME="Unittests for test_account_login.Test004.test_wulian_member Coverage Results" MODIFIED="1563246448040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
-    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_safety_tips_popup.coverage" NAME="Unittests for test_AI01_login.Test001.test_safety_tips_popup Coverage Results" MODIFIED="1578884546978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_safety_tips_popup.coverage" NAME="Unittests for test_AI01_login.Test001.test_safety_tips_popup Coverage Results" MODIFIED="1578898520202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_member_description.coverage" NAME="Unittests for test_account_login.Test004.test_member_description Coverage Results" MODIFIED="1563247166751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_bound_gateway_list.coverage" NAME="Unittests for test_account_login.Test004.test_bound_gateway_list Coverage Results" MODIFIED="1563248952609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$test_app_getAppInfo.coverage" NAME="test_app_getAppInfo Coverage Results" MODIFIED="1568106220859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SmartHomeV6Code_TestTeam-InterfaceTest/test_interfacecase/unite" />
@@ -185,6 +187,7 @@
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_phonepage_button_no_phone.coverage" NAME="Unittests for test_setting.Test005.test_phonepage_button_no_phone Coverage Results" MODIFIED="1563326157976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_login_wrong_mailbox_account_2.coverage" NAME="Unittests for test_AI01_login.Test001.test_login_wrong_mailbox_account_2 Coverage Results" MODIFIED="1578622356941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_phonepage_button_no_code.coverage" NAME="Unittests for test_setting.Test005.test_phonepage_button_no_code Coverage Results" MODIFIED="1563326067452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_code_login_page_none.coverage" NAME="Unittests for test_AI01_login.Test001.test_code_login_page_none Coverage Results" MODIFIED="1578898380485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_app_getAppInfo_App_getAppInfoTestCase_test_app_getAppinfo.coverage" NAME="Unittests for test_app_getAppInfo.App_getAppInfoTestCase.test_app_getAppinfo Coverage Results" MODIFIED="1568276581289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_interface/test" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_setting_skin.coverage" NAME="Unittests for test_setting.Test005.test_setting_skin Coverage Results" MODIFIED="1563334128141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_head_portrait.coverage" NAME="Unittests for test_account_login.Test004.test_head_portrait Coverage Results" MODIFIED="1563247905336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
@@ -205,10 +208,10 @@
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_user_reg_TestUserReg_test_user_reg_normal.coverage" NAME="Unittests for test_user_reg.TestUserReg.test_user_reg_normal Coverage Results" MODIFIED="1568183456435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api_test_framework_finish/test/user" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_login_Test001_test_wrong_password_3.coverage" NAME="Unittests for test_login.Test001.test_wrong_password_3 Coverage Results" MODIFIED="1562919767592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_password_wrong_code.coverage" NAME="Unittests for test_setting.Test005.test_password_wrong_code Coverage Results" MODIFIED="1563328464504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
-    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_wrong_password.coverage" NAME="Unittests for test_AI01_login.Test001.test_wrong_password Coverage Results" MODIFIED="1578879592797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_wrong_password.coverage" NAME="Unittests for test_AI01_login.Test001.test_wrong_password Coverage Results" MODIFIED="1578895727412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_setting_Test005_test_authentication_wrong_code.coverage" NAME="Unittests for test_setting.Test005.test_authentication_wrong_code Coverage Results" MODIFIED="1563325689008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_register.coverage" NAME="Unittests for test_AI01_login.Test001.test_register Coverage Results" MODIFIED="1578549645310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
-    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_find_password_popup.coverage" NAME="Unittests for test_AI01_login.Test001.test_find_password_popup Coverage Results" MODIFIED="1578884742284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_test_AI01_login_Test001_test_find_password_popup.coverage" NAME="Unittests for test_AI01_login.Test001.test_find_password_popup Coverage Results" MODIFIED="1578896821204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_register_Test003_test_password_incorrect_format.coverage" NAME="Unittests for test_register.Test003.test_password_incorrect_format Coverage Results" MODIFIED="1563170883679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_register_Test003_test_password_not_clickable.coverage" NAME="Unittests for test_register.Test003.test_password_not_clickable Coverage Results" MODIFIED="1563170974637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_zoning_management_Test006_test_modefy_no_name.coverage" NAME="Unittests for test_zoning_management.Test006.test_modefy_no_name Coverage Results" MODIFIED="1563416527669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
@@ -230,8 +233,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/appium_test/step/AI01_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1045">
-              <caret line="296" column="44" lean-forward="true" selection-start-line="296" selection-start-column="44" selection-end-line="296" selection-end-column="44" />
+            <state relative-caret-position="225">
+              <caret line="271" column="12" lean-forward="true" selection-start-line="271" selection-start-column="12" selection-end-line="271" selection-end-column="12" />
               <folding>
                 <element signature="e#76#112#0" expanded="true" />
               </folding>
@@ -242,8 +245,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_test/testcase/test_AI01_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+            <state relative-caret-position="585">
+              <caret line="160" column="40" lean-forward="true" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
               <folding>
                 <element signature="e#81#113#0" expanded="true" />
               </folding>
@@ -254,8 +257,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_test/PO/base_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="271" column="21" lean-forward="true" selection-start-line="271" selection-start-column="21" selection-end-line="271" selection-end-column="21" />
+            <state relative-caret-position="221">
+              <caret line="144" column="41" lean-forward="true" selection-start-line="144" selection-start-column="41" selection-end-line="144" selection-end-column="41" />
               <folding>
                 <element signature="e#69#124#0" expanded="true" />
               </folding>
@@ -283,9 +286,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/appium_test/PO/open_app.py" />
+        <option value="$PROJECT_DIR$/appium_test/step/AI01_login.py" />
         <option value="$PROJECT_DIR$/appium_test/PO/base_page.py" />
         <option value="$PROJECT_DIR$/appium_test/testcase/test_AI01_login.py" />
-        <option value="$PROJECT_DIR$/appium_test/step/AI01_login.py" />
       </list>
     </option>
   </component>
@@ -350,8 +353,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_AI01_login.Test001.test_find_password_page">
-    <configuration name="Unittests for test_AI01_login.Test001.test_find_password_page" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for test_AI01_login.Test001.test_safety_tips_popup">
+    <configuration name="Unittests for test_AI01_login.Test001.test_code_login_page" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -362,7 +365,37 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_AI01_login.Test001.test_find_password_page&quot;" />
+      <option name="_new_target" value="&quot;test_AI01_login.Test001.test_code_login_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_AI01_login.Test001.test_code_login_page_none" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appium_test/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_AI01_login.Test001.test_code_login_page_none&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_AI01_login.Test001.test_find_password_page_2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appium_test/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_AI01_login.Test001.test_find_password_page_2&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -396,43 +429,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_AI01_login.Test001.test_user_does_not_exist" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appium_test/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_AI01_login.Test001.test_user_does_not_exist&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_AI01_login.Test001.test_wrong_password" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appium_test/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_AI01_login.Test001.test_wrong_password&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_AI01_login.Test001.test_find_password_page" />
-        <item itemvalue="Python tests.Unittests for test_AI01_login.Test001.test_find_password_popup" />
         <item itemvalue="Python tests.Unittests for test_AI01_login.Test001.test_safety_tips_popup" />
-        <item itemvalue="Python tests.Unittests for test_AI01_login.Test001.test_wrong_password" />
-        <item itemvalue="Python tests.Unittests for test_AI01_login.Test001.test_user_does_not_exist" />
+        <item itemvalue="Python tests.Unittests for test_AI01_login.Test001.test_code_login_page_none" />
+        <item itemvalue="Python tests.Unittests for test_AI01_login.Test001.test_code_login_page" />
+        <item itemvalue="Python tests.Unittests for test_AI01_login.Test001.test_find_password_page_2" />
+        <item itemvalue="Python tests.Unittests for test_AI01_login.Test001.test_find_password_popup" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +497,7 @@
       <workItem from="1578444024757" duration="10841000" />
       <workItem from="1578531143539" duration="20929000" />
       <workItem from="1578618025882" duration="9366000" />
-      <workItem from="1578877762328" duration="8221000" />
+      <workItem from="1578877762328" duration="13198000" />
     </task>
     <task id="LOCAL-00001" summary="V7-2020.01.09_02">
       <created>1578537815248</created>
@@ -531,12 +534,12 @@
       <option name="project" value="LOCAL" />
       <updated>1578625418441</updated>
     </task>
-    <task id="LOCAL-00006" summary="V7-2020.01.09_01">
-      <created>1578532132197</created>
+    <task id="LOCAL-00006" summary="V7-2020.01.13_01">
+      <created>1578887260791</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1578532132197</updated>
+      <updated>1578887260791</updated>
     </task>
     <task id="LOCAL-00007" summary="V7-2020.01.09_01">
       <created>1578532261102</created>
@@ -545,54 +548,53 @@
       <option name="project" value="LOCAL" />
       <updated>1578532261102</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_wrong_password - 2020.01.13 at 09h 41m 00s.xml">
-      <configuration name="Unittests for test_AI01_login.Test001.test_wrong_password" configurationId="tests" />
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_page_2 - 2020.01.13 at 14h 14m 48s.xml">
+      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_page_2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_popup - 2020.01.13 at 09h 48m 44s.xml">
-      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_popup" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_popup - 2020.01.13 at 09h 50m 30s.xml">
-      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_popup" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_popup - 2020.01.13 at 09h 56m 56s.xml">
-      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_popup" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_popup - 2020.01.13 at 10h 07m 04s.xml">
-      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_popup" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_popup - 2020.01.13 at 10h 20m 30s.xml">
-      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_popup" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_popup - 2020.01.13 at 10h 22m 17s.xml">
-      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_popup" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_safety_tips_popup - 2020.01.13 at 11h 03m 47s.xml">
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_safety_tips_popup - 2020.01.13 at 14h 16m 45s.xml">
       <configuration name="Unittests for test_AI01_login.Test001.test_safety_tips_popup" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_popup - 2020.01.13 at 11h 06m 52s.xml">
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_popup - 2020.01.13 at 14h 26m 36s.xml">
       <configuration name="Unittests for test_AI01_login.Test001.test_find_password_popup" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_page - 2020.01.13 at 11h 08m 11s.xml">
-      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_page" configurationId="tests" />
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_popup - 2020.01.13 at 14h 28m 14s.xml">
+      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_popup" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_find_password_page_2 - 2020.01.13 at 14h 35m 44s.xml">
+      <configuration name="Unittests for test_AI01_login.Test001.test_find_password_page_2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_safety_tips_popup - 2020.01.13 at 14h 41m 54s.xml">
+      <configuration name="Unittests for test_AI01_login.Test001.test_safety_tips_popup" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_safety_tips_popup - 2020.01.13 at 14h 44m 38s.xml">
+      <configuration name="Unittests for test_AI01_login.Test001.test_safety_tips_popup" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_code_login_page - 2020.01.13 at 14h 51m 44s.xml">
+      <configuration name="Unittests for test_AI01_login.Test001.test_code_login_page" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_code_login_page_none - 2020.01.13 at 14h 54m 05s.xml">
+      <configuration name="Unittests for test_AI01_login.Test001.test_code_login_page_none" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_AI01_login_Test001_test_safety_tips_popup - 2020.01.13 at 14h 56m 46s.xml">
+      <configuration name="Unittests for test_AI01_login.Test001.test_safety_tips_popup" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36434000" />
+    <option name="totallyTimeSpent" value="41411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989339" visible="true" weight="0.21995708" />
       <window_info id="Structure" order="1" sideWeight="0.5010661" side_tool="true" weight="0.23569277" />
       <window_info id="Favorites" order="2" sideWeight="0.5010661" side_tool="true" weight="0.23569277" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32741398" />
-      <window_info active="true" anchor="bottom" x="337" y="712" width="1328" height="140" id="Run" order="2" sideWeight="0.49849397" visible="true" weight="0.26415095" />
+      <window_info anchor="bottom" x="337" y="712" width="1328" height="140" id="Run" order="2" sideWeight="0.49849397" weight="0.26415095" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -682,7 +684,8 @@
     <MESSAGE value="V7-2020.01.09_04" />
     <MESSAGE value="V7-2020.01.10_1" />
     <MESSAGE value="V7-2020.01.10_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="V7-2020.01.10_2" />
+    <MESSAGE value="V7-2020.01.13_01" />
+    <option name="LAST_COMMIT_MESSAGE" value="V7-2020.01.13_01" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
@@ -715,8 +718,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/appium_test/PO/base_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="271" column="21" lean-forward="true" selection-start-line="271" selection-start-column="21" selection-end-line="271" selection-end-column="21" />
+        <state relative-caret-position="221">
+          <caret line="144" column="41" lean-forward="true" selection-start-line="144" selection-start-column="41" selection-end-line="144" selection-end-column="41" />
           <folding>
             <element signature="e#69#124#0" expanded="true" />
           </folding>
@@ -725,8 +728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/appium_test/testcase/test_AI01_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+        <state relative-caret-position="585">
+          <caret line="160" column="40" lean-forward="true" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
           <folding>
             <element signature="e#81#113#0" expanded="true" />
           </folding>
@@ -735,8 +738,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/appium_test/step/AI01_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="296" column="44" lean-forward="true" selection-start-line="296" selection-start-column="44" selection-end-line="296" selection-end-column="44" />
+        <state relative-caret-position="225">
+          <caret line="271" column="12" lean-forward="true" selection-start-line="271" selection-start-column="12" selection-end-line="271" selection-end-column="12" />
           <folding>
             <element signature="e#76#112#0" expanded="true" />
           </folding>

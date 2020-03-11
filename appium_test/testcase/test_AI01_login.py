@@ -152,3 +152,11 @@ class Test001(unittest.TestCase, AI01_login.Login):  # TestCase类，所有测�
     # 31、登录页面，找回密码弹窗（wlink2019002@126.com），点击取消后再点击2次登录，弹出安全提示弹窗
     def test_safety_tips_popup(self):
         self.assertTrue(self.safety_tips_popup())
+
+    # 32、登录页面，点击验证码登录，进入验证码登录页面
+    def test_code_login_page(self):
+        self.assertTrue(self.code_login_page())
+
+    # 33、验证码登录页面，获取验证码按钮置灰
+    def test_code_login_page_none(self):
+        self.assertFalse(self.code_login_page_none())

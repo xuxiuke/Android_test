@@ -204,30 +204,30 @@ class Login(base_page.Action):
         self.sign_in_page()  # 登录页面
         self.login('17751027576', 'v987456321')  # 错误密码登录
         n = 0
-        while self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
+        while not self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
             self.find_xpath(excel.xpath_con('login')).click()  # 登录
             time.sleep(3)
             n = n + 1
         return self.find_item('您的账号或密码不正确，是否找回密码？')  # 验证找回密码弹窗
 
-    # 29、登录页面，找回密码弹窗（16574488587），点击取消按钮，弹窗消失
+    # 29、登录页面，找回密码弹窗（16574489975），点击取消按钮，弹窗消失
     def find_password_popup(self):
         self.sign_in_page()  # 登录页面
-        self.login('wlink2019001@126.com', 'v987456321')  # 错误密码登录
+        self.login('16574489975', 'v987456321')  # 错误密码登录
         n = 0
-        while self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
+        while not self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
             self.find_xpath(excel.xpath_con('login')).click()  # 登录
             time.sleep(3)
             n = n + 1
         self.find_text('取消').click()  # 点击取消按钮
         return self.find_item('您的账号或密码不正确，是否找回密码？')  # 验证找回密码弹窗
 
-    # 30、登录页面，找回密码弹窗（wlink2019003@126.com），点击找回密码按钮，进入找回密码页面
+    # 30、登录页面，找回密码弹窗（16558785250），点击找回密码按钮，进入找回密码页面
     def find_password_page_2(self):
         self.sign_in_page()  # 登录页面
-        self.login('wlink2019003@126.com', 'v987456321')  # 错误密码登录
+        self.login('16558785250', 'v987456321')  # 错误密码登录
         n = 0
-        while self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
+        while not self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
             self.find_xpath(excel.xpath_con('login')).click()  # 登录
             time.sleep(3)
             n = n + 1
@@ -235,19 +235,21 @@ class Login(base_page.Action):
         time.sleep(1)
         return self.find_item('获取验证码')  # 验证是否进入找回密码页面
 
-    # 31、登录页面，找回密码弹窗（16574488587），点击取消后再点击2次登录，弹出安全提示弹窗
+    # 31、登录页面，找回密码弹窗（16574488587、16558785248），点击取消后再点击2次登录，弹出安全提示弹窗
     def safety_tips_popup(self):
         self.sign_in_page()  # 登录页面
         self.login('16574488587', 'v987456321')  # 错误密码登录
         n = 0
-        while self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
+        while not self.find_item('您的账号或密码不正确，是否找回密码？') and n < 4:
             self.find_xpath(excel.xpath_con('login')).click()  # 登录
             time.sleep(3)
             n = n + 1
         self.find_text('取消').click()  # 点击取消按钮
         time.sleep(1)
+        self.find_xpath(excel.xpath_con('login')).click()  # 登录
+        time.sleep(3)
         m = 0
-        while self.find_item('安全提示') and m < 2:
+        while not self.find_item('安全提示') and m < 2:
             self.find_xpath(excel.xpath_con('login')).click()  # 登录
             time.sleep(3)
             m = m + 1
@@ -255,11 +257,15 @@ class Login(base_page.Action):
 
     # 32、登录页面，点击验证码登录，进入验证码登录页面
     def code_login_page(self):
-        pass
+        self.sign_in_page()  # 登录页面
+        self.find_text('验证码登录').click()  # 点击验证码登录按钮
+        return self.find_item('获取验证码')  # 验证是否进入验证码登录页面
 
     # 33、验证码登录页面，获取验证码按钮置灰
     def code_login_page_none(self):
-        pass
+        self.sign_in_page()  # 登录页面
+        self.find_text('验证码登录').click()  # 点击验证码登录按钮
+        return self.get_colour_text('获取验证码')  # 验证获取验证码按钮颜色
 
     # 34、验证码登录页面，输入正确手机号账号，获取验证码激活
     def code_login_page_right_phone(self):

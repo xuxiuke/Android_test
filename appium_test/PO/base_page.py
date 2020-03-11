@@ -140,7 +140,7 @@ class Action(object):
         self.driver.press_keycode(10)
         self.driver.press_keycode(14)
 
-    # 获取控件颜色，颜色正确返回Ture
+    # 获取控件颜色，激活颜色正确返回Ture
     def get_colour_text(self, loc):
         fix_rgba = (38, 196, 128)  # 按钮颜色
         els = self.driver.find_elements_by_android_uiautomator('text(\"%s\")' % loc)
