@@ -148,3 +148,43 @@ class Test001(unittest.TestCase, step.Login):  # TestCase类，所有测试用�
     # 030
     def test_search_030(self):
         self.assertTrue(self.search())
+
+    # 031
+    def test_search_031(self):
+        self.assertTrue(self.search())
+
+    # 032
+    def test_search_032(self):
+        self.assertTrue(self.search())
+
+    # 033
+    def test_search_033(self):
+        self.assertTrue(self.search())
+
+    # 034
+    def test_search_034(self):
+        self.assertTrue(self.search())
+
+    # 035
+    def test_search_035(self):
+        self.assertTrue(self.search())
+
+    # 036
+    def test_search_036(self):
+        self.assertTrue(self.search())
+
+    # 037
+    def test_search_037(self):
+        self.assertTrue(self.search())
+
+    # 038
+    def test_search_038(self):
+        self.assertTrue(self.search())
+
+    # 039
+    def test_search_039(self):
+        self.assertTrue(self.search())
+
+    # 040
+    def test_search_040(self):
+        self.assertTrue(self.search())

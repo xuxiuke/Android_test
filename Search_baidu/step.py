@@ -12,7 +12,7 @@ import time
 
 class Login(base.Action):
 
-    # 1、账号已有住宅情况，登录成功
+    # 1、搜索流程：南京物联
     def search(self):
         self.find_xpath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TextSwitcher[1]/android.widget.TextView[1]').click()
         self.find_xpath("//android.widget.EditText[@resource-id='com.baidu.searchbox:id/SearchTextInput']").send_keys('南京物联')

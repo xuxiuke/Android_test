@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16d3bef8-c8e0-476d-aead-1cad0ecace27" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Search_baidu/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/open_baidu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Search_baidu/open_baidu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Search_baidu/search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/step.py" beforeDir="false" afterPath="$PROJECT_DIR$/Search_baidu/step.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/test_step.py" beforeDir="false" afterPath="$PROJECT_DIR$/Search_baidu/test_step.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search_baidu/open_baidu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Search_baidu/open_baidu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search_baidu/step.py" beforeDir="false" afterPath="$PROJECT_DIR$/Search_baidu/step.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search_baidu/test_step.py" beforeDir="false" afterPath="$PROJECT_DIR$/Search_baidu/test_step.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +145,7 @@
     <SUITE FILE_PATH="coverage/test$die_visual.coverage" NAME="die_visual Coverage Results" MODIFIED="1561623037416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DEMO" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_wall_socket_Test008_test_close_socket.coverage" NAME="Unittests for test_wall_socket.Test008.test_close_socket Coverage Results" MODIFIED="1565341638994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_modify_the_name_cancel.coverage" NAME="Unittests for test_account_login.Test004.test_modify_the_name_cancel Coverage Results" MODIFIED="1563248274064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
-    <SUITE FILE_PATH="coverage/test$Unittests_for_test_step_Test001.coverage" NAME="Unittests for test_step.Test001 Coverage Results" MODIFIED="1586330571561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Search_baidu" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_test_step_Test001.coverage" NAME="Unittests for test_step.Test001 Coverage Results" MODIFIED="1586335261228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Search_baidu" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_login_Test001_test_wrong_password.coverage" NAME="Unittests for test_login.Test001.test_wrong_password Coverage Results" MODIFIED="1562919120273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_click_the_devide.coverage" NAME="Unittests for test_account_login.Test004.test_click_the_devide Coverage Results" MODIFIED="1563242722052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_change_password.coverage" NAME="Unittests for test_account_login.Test004.test_change_password Coverage Results" MODIFIED="1563258914994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
@@ -234,11 +231,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Search_baidu/open_baidu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="287">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding>
                 <element signature="e#75#101#0" expanded="true" />
               </folding>
@@ -249,7 +246,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Search_baidu/step.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="467">
               <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
                 <element signature="e#69#98#0" expanded="true" />
@@ -258,25 +255,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Search_baidu/test_step.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="3560">
+              <caret line="188" column="30" lean-forward="true" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
               <folding>
                 <element signature="e#75#96#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Search_baidu/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="284" column="11" lean-forward="true" selection-start-line="284" selection-start-column="11" selection-end-line="284" selection-end-column="11" />
-              <folding>
-                <element signature="e#69#124#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -315,14 +300,15 @@
         <option value="$PROJECT_DIR$/Demo/step.py" />
         <option value="$PROJECT_DIR$/Demo/test_step.py" />
         <option value="$PROJECT_DIR$/Search_baidu/base.py" />
-        <option value="$PROJECT_DIR$/Search_baidu/step.py" />
         <option value="$PROJECT_DIR$/Search_baidu/test_step.py" />
+        <option value="$PROJECT_DIR$/Search_baidu/step.py" />
+        <option value="$PROJECT_DIR$/Search_baidu/open_baidu.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="254" />
-    <option name="y" value="516" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="581" />
   </component>
@@ -520,7 +506,7 @@
       <workItem from="1578618025882" duration="9366000" />
       <workItem from="1578877762328" duration="13198000" />
       <workItem from="1586244781135" duration="2086000" />
-      <workItem from="1586307070562" duration="16838000" />
+      <workItem from="1586307070562" duration="20171000" />
     </task>
     <task id="LOCAL-00001" summary="V7-2020.01.09_02">
       <created>1578537815248</created>
@@ -571,13 +557,17 @@
       <option name="project" value="LOCAL" />
       <updated>1586312009172</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="V7-2020.04.08 百度search-02">
+      <created>1586332178556</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586332178556</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.08 at 12h 11m 59s.xml">
-      <configuration name="Unittests for test_step.Test001" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_test_step_Test001 - 2020.04.08 at 14h 21m 52s.xml">
       <configuration name="Unittests for test_step.Test001" configurationId="tests" />
     </history-entry>
@@ -605,19 +595,23 @@
     <history-entry file="Unittests_for_test_step_Test001_test_search_001 - 2020.04.08 at 15h 21m 31s.xml">
       <configuration name="Unittests for test_step.Test001.test_search_001" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.08 at 16h 28m 26s.xml">
+      <configuration name="Unittests for test_step.Test001" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60335000" />
+    <option name="totallyTimeSpent" value="63668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989339" visible="true" weight="0.22639485" />
       <window_info id="Structure" order="1" sideWeight="0.5010661" side_tool="true" weight="0.23569277" />
       <window_info id="Favorites" order="2" sideWeight="0.5010661" side_tool="true" weight="0.23569277" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32741398" />
-      <window_info active="true" anchor="bottom" x="337" y="712" width="1328" height="140" id="Run" order="2" sideWeight="0.49849397" visible="true" weight="0.2918979" />
+      <window_info active="true" anchor="bottom" x="337" y="712" width="1328" height="140" id="Run" order="2" sideWeight="0.49849397" visible="true" weight="0.19533852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -717,7 +711,8 @@
     <MESSAGE value="V7-2020.01.10_2" />
     <MESSAGE value="V7-2020.01.13_01" />
     <MESSAGE value="V7-2020.04.08 百度search-01" />
-    <option name="LAST_COMMIT_MESSAGE" value="V7-2020.04.08 百度search-01" />
+    <MESSAGE value="V7-2020.04.08 百度search-02" />
+    <option name="LAST_COMMIT_MESSAGE" value="V7-2020.04.08 百度search-02" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
@@ -797,36 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search_baidu/search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#71#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_test/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-          <folding>
-            <element signature="e#61#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search_baidu/open_baidu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="e#75#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/http/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -848,19 +813,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/appium_test/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="37" column="3" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+          <folding>
+            <element signature="e#61#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search_baidu/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="e#71#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Search_baidu/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="284" column="11" lean-forward="true" selection-start-line="284" selection-start-column="11" selection-end-line="284" selection-end-column="11" />
+        <state relative-caret-position="200">
+          <caret line="243" column="11" lean-forward="true" selection-start-line="243" selection-start-column="11" selection-end-line="243" selection-end-column="11" />
           <folding>
             <element signature="e#69#124#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Search_baidu/test_step.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3560">
+          <caret line="188" column="30" lean-forward="true" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
+          <folding>
+            <element signature="e#75#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Search_baidu/step.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="467">
           <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding>
             <element signature="e#69#98#0" expanded="true" />
@@ -868,12 +863,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search_baidu/test_step.py">
+    <entry file="file://$PROJECT_DIR$/Search_baidu/open_baidu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="287">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
-            <element signature="e#75#96#0" expanded="true" />
+            <element signature="e#75#101#0" expanded="true" />
           </folding>
         </state>
       </provider>
