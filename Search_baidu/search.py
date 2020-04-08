@@ -11,8 +11,8 @@ import HTMLTestRunner
 import time
 
 # 相对路径
-testcase_path = '.\\Demo'
-report_path = ".\\  Demo\\appium_report.html"
+testcase_path = '.\\Search_baidu'
+report_path = ".\\  Search_baidu\\appium_report.html"
 
 def creat_suite():
     uit = unittest.TestSuite()

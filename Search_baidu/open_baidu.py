@@ -6,7 +6,7 @@
 创建时间: 2020/04/08-08:53
 """
 
-from Demo import step
+from Search_baidu import step
 import time
 from appium import webdriver
 

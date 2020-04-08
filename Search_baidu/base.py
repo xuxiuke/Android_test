@@ -8,10 +8,10 @@
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 from appium.webdriver.mobilecommand import MobileCommand
 from appium.webdriver.common.touch_action import TouchAction
 from PIL import Image
+from appium.webdriver.connectiontype import ConnectionType
 
 
 class Action(object):
@@ -125,20 +125,6 @@ class Action(object):
             print("未找到： %s" % loc)
             return False
 
-    # 输入验证码1-6
-    def input_validation_code(self):
-        self.driver.press_keycode(8)
-        self.driver.press_keycode(9)
-        self.driver.press_keycode(10)
-        self.driver.press_keycode(11)
-
-    # 输入错误验证码
-    def input_error_validation_code(self):
-        self.driver.press_keycode(8)
-        self.driver.press_keycode(9)
-        self.driver.press_keycode(10)
-        self.driver.press_keycode(14)
-
     # 获取控件颜色，激活颜色正确返回Ture
     def get_colour_text(self, loc):
         fix_rgba = (38, 196, 128)  # 按钮颜色
@@ -223,17 +209,6 @@ class Action(object):
             print('未找到页面： ' + activityName)
             return False
 
-    # 设备列表页面点击设备???
-    def click_device(self, deviceName):
-        for i in range(10):
-            if self.find_item(deviceName):
-                time.sleep(1)
-                self.driver.find_element_by_android_uiautomator('text(\"%s\")' % deviceName).click()
-                break
-            else:
-                self.swipeUp(1000)
-                time.sleep(1)
-
     # 切换至H5界面
     def switch_h5(self):
         print(self.driver.contexts)
@@ -251,3 +226,62 @@ class Action(object):
         print(self.driver.current_context)
 
     # self.driver.implicitly_wait(30)  # 智能等待时间
+
+    '''
+        # WIFI
+        ConnectionType.WIFI_ONLY
+        # 数据流量
+        ConnectionType.DATA_ONLY
+        # 飞行模式
+        ConnectionType.AIRPLANE_MODE
+        # 无网络模式
+        ConnectionType.NO_CONNECTION
+        # 全部都打开
+        ConnectionType.ALL_NETWORK_ON
+    '''
+
+    def getwebstate(self):
+        """
+        获取当前网络的状态
+        """
+        info = {0: "NO_CONNECTION（没网络）",
+
+                1: "AIRPLANE_MODE（飞行模式）",
+
+                2: "WIFI_ONLY（仅wifi）",
+
+                4: "DATA_ONLY（仅数据）",
+
+                6: "ALL_NETWORK_ON（所有网络都打开）"}
+
+        state = self.driver.network_connection
+        return info.get(state)
+
+    def wifi(self):
+        """
+        仅wifi
+        """
+        # 设置 网络
+        self.driver.set_network_connection(ConnectionType.WIFI_ONLY)
+        print(self.getwebstate())
+
+    def only(self):
+        """
+        仅数据
+        """
+        self.driver.set_network_connection(ConnectionType.DATA_ONLY)
+        print(self.getwebstate())
+
+    def airplane_mode(self):
+        """
+        飞行模式
+        """
+        self.driver.set_network_connection(ConnectionType.AIRPLANE_MODE)
+        print(self.getwebstate())
+
+    def all_networe_on(self):
+        """
+        所有网络都打开
+        """
+        self.driver.set_network_connection(ConnectionType.ALL_NETWORK_ON)
+        print(self.getwebstate())
