@@ -23,7 +23,6 @@ class Open_baidu(step.Login):
             "unicodeKeyboard": True,
             'appPackage': 'com.baidu.searchbox',
             'appActivity': '.MainActivity',
-            'async' : False,  # 您的主机中的软件中止了一个已建立的连接
         }
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
         print('打开APP成功')
