@@ -6,4 +6,6 @@ python manage.py runserver
 
 管理员地址：http://127.0.0.1:8000/admin/
 管理员账号：admin
-密码：admin12345
+密码：admin123
+
+python manage.py shell

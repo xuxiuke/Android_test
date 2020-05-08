@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16d3bef8-c8e0-476d-aead-1cad0ecace27" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/guest/sign/templates/event_manage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guest/sign/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guest/资料" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guest/sign/templates/event_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/guest/sign/templates/event_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guest/sign/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/guest/sign/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guest/资料" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/资料" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +146,7 @@
     <SUITE FILE_PATH="coverage/test$die_visual.coverage" NAME="die_visual Coverage Results" MODIFIED="1561623037416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DEMO" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_wall_socket_Test008_test_close_socket.coverage" NAME="Unittests for test_wall_socket.Test008.test_close_socket Coverage Results" MODIFIED="1565341638994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_modify_the_name_cancel.coverage" NAME="Unittests for test_account_login.Test004.test_modify_the_name_cancel Coverage Results" MODIFIED="1563248274064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
-    <SUITE FILE_PATH="coverage/test$Unittests_for_test_step_Test001.coverage" NAME="Unittests for test_step.Test001 Coverage Results" MODIFIED="1587516848162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Search_baidu" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_test_step_Test001.coverage" NAME="Unittests for test_step.Test001 Coverage Results" MODIFIED="1588899626377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Search_baidu" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_login_Test001_test_wrong_password.coverage" NAME="Unittests for test_login.Test001.test_wrong_password Coverage Results" MODIFIED="1562919120273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_click_the_devide.coverage" NAME="Unittests for test_account_login.Test004.test_click_the_devide Coverage Results" MODIFIED="1563242722052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_account_login_Test004_test_change_password.coverage" NAME="Unittests for test_account_login.Test004.test_change_password Coverage Results" MODIFIED="1563258914994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
@@ -228,6 +227,20 @@
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_register_Test003_test_new_password.coverage" NAME="Unittests for test_register.Test003.test_new_password Coverage Results" MODIFIED="1563171417997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appiumframework/testcase" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_test_zoning_management_Test006_test_new_zoning_devide.coverage" NAME="Unittests for test_zoning_management.Test006.test_new_zoning_devide Coverage Results" MODIFIED="1563417347251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_test/testcase" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="test" />
   </component>
@@ -248,8 +261,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Search_baidu/test_step.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="138">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="e#74#103#0" expanded="true" />
               </folding>
@@ -257,8 +270,8 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guest/资料">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Demo/资料">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
@@ -266,37 +279,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/guest/guest/urls.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guest/sign/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding>
-                <element signature="e#639#671#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="540">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guest/sign/views.py">
+        <entry file="file://$PROJECT_DIR$/guest/sign/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="228">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guest/sign/templates/event_manage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -340,18 +338,22 @@
         <option value="$PROJECT_DIR$/Search_baidu/step.py" />
         <option value="$PROJECT_DIR$/Search_baidu/test_step.py" />
         <option value="$PROJECT_DIR$/guest/资料.py" />
+        <option value="$PROJECT_DIR$/guest/资料" />
+        <option value="$PROJECT_DIR$/guest/sign/migrations/0002_guest_creat_time.py" />
         <option value="$PROJECT_DIR$/guest/guest/settings.py" />
         <option value="$PROJECT_DIR$/guest/sign/templates/index.html" />
         <option value="$PROJECT_DIR$/guest/sign/templates/event_manage.html" />
-        <option value="$PROJECT_DIR$/guest/资料" />
         <option value="$PROJECT_DIR$/guest/sign/views.py" />
         <option value="$PROJECT_DIR$/guest/guest/urls.py" />
+        <option value="$PROJECT_DIR$/guest/sign/models.py" />
+        <option value="$PROJECT_DIR$/guest/sign/admin.py" />
+        <option value="$PROJECT_DIR$/Demo/资料" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="404" />
-    <option name="y" value="499" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="406" />
+    <option name="y" value="496" />
     <option name="width" value="1400" />
     <option name="height" value="581" />
   </component>
@@ -388,13 +390,6 @@
               <item name="guest" type="462c0819:PsiDirectoryNode" />
               <item name="sign" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="guest" type="462c0819:PsiDirectoryNode" />
-              <item name="sign" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -406,6 +401,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\test\Demo" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -575,7 +575,18 @@
       <workItem from="1587084691971" duration="2693000" />
       <workItem from="1587344716053" duration="3281000" />
       <workItem from="1587430614789" duration="13851000" />
-      <workItem from="1587515565029" duration="12941000" />
+      <workItem from="1587515565029" duration="15788000" />
+      <workItem from="1587600680546" duration="1236000" />
+      <workItem from="1587689801063" duration="2331000" />
+      <workItem from="1587862660920" duration="1855000" />
+      <workItem from="1587947840203" duration="3662000" />
+      <workItem from="1588037436028" duration="1569000" />
+      <workItem from="1588122395856" duration="673000" />
+      <workItem from="1588214505674" duration="671000" />
+      <workItem from="1588726483808" duration="6550000" />
+      <workItem from="1588810932320" duration="5573000" />
+      <workItem from="1588833997114" duration="5729000" />
+      <workItem from="1588896762415" duration="16758000" />
     </task>
     <task id="LOCAL-00001" summary="V7-2020.01.09_02">
       <created>1578537815248</created>
@@ -647,43 +658,50 @@
       <option name="project" value="LOCAL" />
       <updated>1586417876962</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2020.04.22 guest01">
+      <created>1587544081012</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587544081012</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_step_Test001_test_search_001 - 2020.04.08 at 15h 19m 01s.xml">
-      <configuration name="Unittests for test_step.Test001.test_search_001" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_step_Test001_test_search_001 - 2020.04.08 at 15h 21m 31s.xml">
-      <configuration name="Unittests for test_step.Test001.test_search_001" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.08 at 16h 28m 26s.xml">
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.24 at 13h 53m 30s.xml">
       <configuration name="Unittests for test_step.Test001" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.09 at 10h 08m 29s.xml">
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.24 at 13h 56m 48s.xml">
       <configuration name="Unittests for test_step.Test001" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.09 at 11h 36m 07s.xml">
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.27 at 15h 24m 34s.xml">
       <configuration name="Unittests for test_step.Test001" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.09 at 13h 36m 37s.xml">
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.27 at 15h 26m 02s.xml">
       <configuration name="Unittests for test_step.Test001" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.09 at 17h 40m 58s.xml">
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.27 at 15h 27m 39s.xml">
       <configuration name="Unittests for test_step.Test001" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.13 at 15h 02m 51s.xml">
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.27 at 17h 42m 23s.xml">
       <configuration name="Unittests for test_step.Test001" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.13 at 17h 44m 23s.xml">
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.30 at 15h 55m 49s.xml">
       <configuration name="Unittests for test_step.Test001" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_step_Test001 - 2020.04.20 at 17h 16m 25s.xml">
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.05.06 at 17h 42m 13s.xml">
+      <configuration name="Unittests for test_step.Test001" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.05.07 at 15h 01m 59s.xml">
+      <configuration name="Unittests for test_step.Test001" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_step_Test001 - 2020.05.07 at 15h 04m 20s.xml">
       <configuration name="Unittests for test_step.Test001" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134466000" />
+    <option name="totallyTimeSpent" value="183920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -695,26 +713,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="406" y="496" width="1400" height="581" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989339" visible="true" weight="0.18615879" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989339" visible="true" weight="0.30948794" />
       <window_info id="Structure" order="1" sideWeight="0.5010661" side_tool="true" weight="0.23569277" />
       <window_info id="Favorites" order="2" sideWeight="0.5010661" side_tool="true" weight="0.23569277" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32741398" />
-      <window_info anchor="bottom" x="337" y="712" width="1328" height="140" id="Run" order="2" sideWeight="0.49849397" weight="0.30965593" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32629108" />
+      <window_info anchor="bottom" x="337" y="712" width="1328" height="140" id="Run" order="2" sideWeight="0.49849397" weight="0.4342723" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49892703" weight="0.3286385" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3286385" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50107294" side_tool="true" weight="0.32963374" />
       <window_info anchor="bottom" id="调试" order="11" weight="0.32963374" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.47887325" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32963374" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.46713614" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.3286385" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -806,65 +824,10 @@
     <MESSAGE value="V7-2020.04.08 百度search-02" />
     <MESSAGE value="V7-2020.04.08 百度search-03" />
     <MESSAGE value="V7-2020.04.09 百度搜索更新-02" />
-    <option name="LAST_COMMIT_MESSAGE" value="V7-2020.04.09 百度搜索更新-02" />
+    <MESSAGE value="2020.04.22 guest01" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.04.22 guest01" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="691" selection-start-line="691" selection-end-line="691" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/PO/Open_app.py" />
-    <entry file="file://$PROJECT_DIR$/appium_test/step/a01_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#70#106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_test/step/AI01_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="e#76#112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/test.py" />
-    <entry file="file://$PROJECT_DIR$/appium_test/PO/base_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="253" column="47" lean-forward="true" selection-start-line="253" selection-start-column="47" selection-end-line="253" selection-end-column="47" />
-          <folding>
-            <element signature="e#69#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_test/PO/open_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="e#77#103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appium_test/testcase/test_AI01_login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1081,6 +1044,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/guest/sign/migrations/0002_guest_creat_time.py" />
+    <entry file="file://$PROJECT_DIR$/guest/sign/migrations/0001_initial.py" />
+    <entry file="file://$PROJECT_DIR$/guest/sign/migrations/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/guest/sign/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guest/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guest/guest/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guest/sign/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Search_baidu/step.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1093,62 +1087,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guest/sign/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search_baidu/test_step.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="e#74#103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guest/资料">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="120">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guest/sign/templates/event_manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="180">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/guest/guest/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/guest/guest/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+        <state relative-caret-position="940">
+          <caret line="47" column="50" lean-forward="true" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guest/sign/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="128">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guest/guest/urls.py">
+    <entry file="file://$PROJECT_DIR$/Search_baidu/test_step.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="138">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
-            <element signature="e#639#671#0" expanded="true" />
+            <element signature="e#74#103#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guest/sign/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guest/sign/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/资料">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
