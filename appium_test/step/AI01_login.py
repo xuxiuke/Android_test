@@ -34,9 +34,10 @@ class Login(base_page.Action):
     # 4、使用条款与免责协议页面
     def agreement_page(self):
         self.register()  # 注册页面
-        self.find_text('《使用条款与免责协议》').click()  # 点击使用条款与免责协议
+        self.switch_h5()
+        self.find_text('《隐私政策声明》').click()  # 点击使用条款与免责协议
         time.sleep(3)
-        return self.find_item('《使用条款与免责协议》')
+        return self.find_item('《用户服务声明》')
 
     # 5、注册页面，获取验证码按钮置灰不可点击
     def register_no_phone(self):

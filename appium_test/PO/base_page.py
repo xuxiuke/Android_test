@@ -280,10 +280,10 @@ class Action(object):
 
     # 前置条件：欢迎使用页面
     def welcome_to_use_page(self):
-        if self.find_item('欢迎使用'):  # 未登录情况
+        if self.find_item('物联智能家居，让智慧连接生活'):  # 未登录情况
             pass
-        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
-            self.driver.back()  # 点击返回按钮
+        elif self.find_item('网关是家居的智慧中枢，请先添加网关。'):  # 账号已登录，没有住宅情况
+            # self.driver.back()  # 点击返回按钮
             self.logout()  # 退出登录
             self.driver.back()  # 点击返回按钮
         else:  # 账号登陆，有住宅情况
@@ -292,10 +292,13 @@ class Action(object):
 
     # 前置条件：登陆页面
     def sign_in_page(self):
-        if self.find_item('欢迎使用'):  # 未登录情况
+        if self.find_item('物联智能家居，让智慧连接生活'):  # 未登录情况
             self.find_text('登录').click()  # 点击登录按钮，进入登录页面
-        elif self.find_item('添加网关'):  # 账号已登录，没有住宅情况
+        elif self.find_item('网关是家居的智慧中枢，请先添加网关。'):  # 账号已登录，没有住宅情况
             self.driver.back()  # 点击返回按钮
             self.logout()  # 退出登录
         else:  # 账号登陆，有住宅情况
             self.logout()  # 退出登录
+
+#  网关是家居的智慧中枢，请先添加网关。（首页，没有住宅情况）
+#  物联智能家居，让智慧连接生活（欢迎使用页面）

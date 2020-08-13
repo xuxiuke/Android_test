@@ -8,8 +8,9 @@
       <sourceFolder url="file://$MODULE_DIR$/venv" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test_interface" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/guest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/airtest_V7" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
